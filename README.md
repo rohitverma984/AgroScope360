@@ -48,13 +48,13 @@ AgroScope360 is an enterprise-grade sustainability decision cockpit linking prim
 ## 🛠️ Architecture & Tech Stack
 
 * **Frontend:** Responsive Nordic Climate Precision UI built with Tailwind CSS, Three.js WebGL, Leaflet, and vanilla modern JavaScript.
-* **Backend:** FastAPI high-performance asynchronous REST API (`web_server.py`) + Streamlit multi-view analytics studio (`app.py`).
+* **Backend:** FastAPI high-performance asynchronous application & REST API (`web_server.py`) serving the complete web platform on port 8000.
 * **Core Analytics & Data Engine:** Python, Pandas, NumPy, PyArrow for local parquet and CSV data streaming.
 * **Audit & Compliance Standards:** GHG Protocol Corporate Standard (AR6 GWP100), CSRD ESRS E1 & E4, SBTi FLAG v1.1, SBTN Freshwater Stage 3.
 
 ---
 
-## 💻 Quick Start
+## 💻 Quick Start & Deployment
 
 ### 1. Clone the repository
 ```bash
@@ -70,20 +70,16 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 3. Launch the platform
-* **FastAPI Web Application:**
-  ```bash
-  uvicorn web_server:app --host 0.0.0.0 --port 8000 --reload
-  ```
-  Open **`http://localhost:8000`** in your browser.
+### 3. Launch & Deploy on Port 8000
+Start the production server on port **8000**:
+```bash
+uvicorn web_server:app --host 0.0.0.0 --port 8000
+```
 
-* **Streamlit Multi-View Studio:**
-  ```bash
-  streamlit run app.py --server.port 8501
-  ```
-  Open **`http://localhost:8501`** in your browser.
+Open **`http://localhost:8000`** in your browser. All interactive 3D digital twins, satellite geomaps, decision studios, and REST endpoints are served directly through port 8000.
 
 ---
 
 ## 📄 License
 This project is licensed under the Apache 2.0 License.
+
