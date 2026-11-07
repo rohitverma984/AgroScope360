@@ -1,0 +1,68 @@
+{
+ "id": "739a6869-ff59-0116-0b21-ebc8bd5360f5",
+ "specVersion": "2.2.0",
+ "version": 1,
+ "created": "2026-03-03T09:00:00Z",
+ "status": "Active",
+ "companyName": "Supplier 072 (synthetic)",
+ "companyIds": [
+  "urn:pathfinder:company:customcode:buyer-assigned:SUP072"
+ ],
+ "productDescription": "Corrugated board / cartons",
+ "productIds": [
+  "urn:pathfinder:product:customcode:buyer-assigned:M153"
+ ],
+ "productCategoryCpc": "21000",
+ "productNameCompany": "Corrugated board / cartons",
+ "comment": "Synthetic PCF for the Since AI 2026 hackathon. Not a real supplier declaration.",
+ "pcf": {
+  "declaredUnit": "kilogram",
+  "unitaryProductAmount": "1",
+  "pCfExcludingBiogenic": "847.6",
+  "pCfIncludingBiogenic": "847.6",
+  "fossilGhgEmissions": "805.2",
+  "fossilCarbonContent": "0",
+  "biogenicCarbonContent": "0",
+  "dLucGhgEmissions": "0.0",
+  "landManagementGhgEmissions": "42.4",
+  "otherBiogenicGhgEmissions": "0",
+  "iLucGhgEmissions": "0",
+  "biogenicCarbonWithdrawal": "0",
+  "aircraftGhgEmissions": "0",
+  "characterizationFactors": "AR6",
+  "ipccCharacterizationFactorsSources": [
+   "AR6"
+  ],
+  "crossSectoralStandardsUsed": [
+   "GHG Protocol Product standard"
+  ],
+  "productOrSectorSpecificRules": [],
+  "boundaryProcessesDescription": "Cradle-to-gate: cultivation, inputs, drying, storage, transport to supplier warehouse.",
+  "referencePeriodStart": "2025-01-01T00:00:00Z",
+  "referencePeriodEnd": "2026-01-01T00:00:00Z",
+  "geographyCountry": "FI",
+  "secondaryEmissionFactorSources": [
+   {
+    "name": "synthetic secondary database",
+    "version": "2025"
+   }
+  ],
+  "exemptedEmissionsPercent": 0.6,
+  "exemptedEmissionsDescription": "Capital goods and overheads excluded.",
+  "packagingEmissionsIncluded": false,
+  "primaryDataShare": 65.0,
+  "dqi": {
+   "coveragePercent": 92.0,
+   "technologicalDQR": 1.8,
+   "temporalDQR": 2.2,
+   "geographicalDQR": 1.6,
+   "completenessDQR": 1.3,
+   "reliabilityDQR": 1.7
+  },
+  "assurance": {
+   "assurance": true,
+   "coverage": "product line",
+   "level": "limited"
+  }
+ }
+}

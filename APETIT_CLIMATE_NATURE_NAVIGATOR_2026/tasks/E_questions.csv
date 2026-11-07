@@ -1,0 +1,35 @@
+question_id,split,kind,question,unit
+E01,test,numeric,What were Scope 1 emissions from LNG and LPG combustion at the Säkylä plant in 2025 (tCO2e)?,tCO2e
+E02,test,numeric,What were market-based Scope 2 emissions in 2025 after reconciling the internal GoO log with the registry statement (tCO2e)?,tCO2e
+E03,test,numeric,What were location-based Scope 2 emissions of the Kantvik site in 2025 (tCO2e)?,tCO2e
+E04,test,numeric,"What were 2025 category 1 emissions from imported rapeseed (all non-Finnish origins), in tCO2e?",tCO2e
+E05,test,numeric,"What share (%) of 2025 category 1 emissions comes from rapeseed / turnip rape (all origins, incl. contract growers)?",%
+E06,test,numeric,What share (%) of total 2025 emissions (S1 + S2 market + S3) are FLAG emissions as defined in docs/METHODOLOGY.md?,%
+E07,test,numeric,What share (%) of 2025 Finnish contract-farm cradle-to-gate emissions comes from drained organic soils?,%
+E08,test,numeric,How many Finnish contract farms had at least 30 % of their 2025 contract-crop area on organic soils?,farms
+E09,test,numeric,What was biogenic CO2 from combustion at the Kantvik site in 2025 (t)?,tCO2
+E10,test,numeric,"What was the Säkylä plant's electricity consumption in 2025 (MWh), after correcting meter-reading issues?",MWh
+E11,test,numeric,"What share (%) of the Säkylä plant's 2025 energy consumption (fuels + electricity) was renewable, counting GoO-backed electricity as renewable?",%
+E12,test,numeric,"What was group water consumption in 2024 (m3) following GRI 303, i.e. not counting internally reused water as a withdrawal?",m3
+E13,test,numeric,What were refrigerant (fugitive) emissions at the Säkylä plant in 2025 (tCO2e)?,tCO2e
+E14,test,numeric,"What were 2025 category 4 emissions from the sea legs of inbound shipments (bulk and reefer vessels), in tCO2e?",tCO2e
+E15,test,numeric,"How many tonnes of soy protein isolate (derived from a SBTN high-impact commodity) were purchased in 2025, net of returns?",t
+E16,test,numeric,"What was the delivery-weighted cradle-to-farm-gate footprint of Finnish contract pea in 2025 (kg CO2e per kg delivered), including organic-soil emissions?",kgCO2e/kg
+E17,test,numeric,"What was the delivery-weighted cradle-to-farm-gate footprint of Finnish contract turnip rape in 2025 (kg CO2e per kg delivered), including organic-soil emissions?",kgCO2e/kg
+E18,test,numeric,By how many percent did Finnish contract pea deliveries change from 2025 to 2026?,%
+E19,test,numeric,By how many percent did Swedish (Foodhills) pea deliveries change from 2025 to 2026?,%
+E20,test,numeric,"Illustrative: with 2025 as base year and the SBTi minimum 4.2 %/yr linear rate for Scope 1+2, what is a 2032 absolute Scope 1+2 (market-based) target in tCO2e?",tCO2e
+E21,test,numeric,"Illustrative: with 2025 as base year and the SBTi FLAG minimum 3.03 %/yr linear rate, what is a 2032 FLAG target in tCO2e?",tCO2e
+E90,dev,numeric,What were total Scope 1 emissions in 2024 (tCO2e)?,tCO2e
+E91,dev,numeric,What were market-based Scope 2 emissions in 2024 (tCO2e)?,tCO2e
+E92,dev,numeric,What were Scope 3 category 1 emissions in 2024 (tCO2e)?,tCO2e
+E30,test,rubric,"Is Apetit required to set a separate SBTi FLAG target, and why?",
+E31,test,rubric,"What minimum linear annual reduction rates apply for near-term targets under SBTi Corporate Net-Zero Standard V1.3.1 for (a) Scope 1+2, (b) Scope 3 well-below 2 C, (c) FLAG?",
+E32,test,rubric,The Finnish grain trade was divested in 2022 and Foodhills was acquired in 2025. What does this mean for a 2019 base year?,
+E33,test,rubric,Does cancelling wind-power guarantees of origin reduce location-based Scope 2?,
+E34,test,rubric,Which contract-farming emission sources are FLAG and which are non-FLAG?,
+E35,test,rubric,Is rapeseed within the scope of the EU Deforestation Regulation? Is the soy protein isolate in this dataset?,
+E36,test,rubric,"How does ESRS E3 (revised, 2026) define an area of water stress?",
+E37,test,rubric,"Can CO2 removals from catch crops be reported under the GHG Protocol Land Sector and Removals Standard, and under what conditions?",
+E38,test,rubric,"Which SBTN step uses a materiality screening based on ENCORE, and which pressure categories does it cover?",
+E39,test,rubric,Why is a reported reduction from switching spend-based to supplier-specific factors not an emission reduction?,

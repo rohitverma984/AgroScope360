@@ -1,0 +1,68 @@
+{
+ "id": "12276ec9-c251-b10f-7014-eccb93e7e2b2",
+ "specVersion": "2.2.0",
+ "version": 1,
+ "created": "2025-03-22T09:00:00Z",
+ "status": "Active",
+ "companyName": "Supplier 040 (synthetic)",
+ "companyIds": [
+  "urn:pathfinder:company:customcode:buyer-assigned:SUP040"
+ ],
+ "productDescription": "Faba bean, Finland",
+ "productIds": [
+  "urn:pathfinder:product:customcode:buyer-assigned:M127"
+ ],
+ "productCategoryCpc": "21000",
+ "productNameCompany": "Faba bean, Finland",
+ "comment": "Synthetic PCF for the Since AI 2026 hackathon. Not a real supplier declaration.",
+ "pcf": {
+  "declaredUnit": "kilogram",
+  "unitaryProductAmount": "1",
+  "pCfExcludingBiogenic": "0.4182",
+  "pCfIncludingBiogenic": "0.4182",
+  "fossilGhgEmissions": "0.0836",
+  "fossilCarbonContent": "0",
+  "biogenicCarbonContent": "0",
+  "dLucGhgEmissions": "0.0000",
+  "landManagementGhgEmissions": "0.3346",
+  "otherBiogenicGhgEmissions": "0",
+  "iLucGhgEmissions": "0",
+  "biogenicCarbonWithdrawal": "0",
+  "aircraftGhgEmissions": "0",
+  "characterizationFactors": "AR6",
+  "ipccCharacterizationFactorsSources": [
+   "AR6"
+  ],
+  "crossSectoralStandardsUsed": [
+   "GHG Protocol Product standard"
+  ],
+  "productOrSectorSpecificRules": [],
+  "boundaryProcessesDescription": "Cradle-to-gate: cultivation, inputs, drying, storage, transport to supplier warehouse.",
+  "referencePeriodStart": "2024-01-01T00:00:00Z",
+  "referencePeriodEnd": "2025-01-01T00:00:00Z",
+  "geographyCountry": "FI",
+  "secondaryEmissionFactorSources": [
+   {
+    "name": "synthetic secondary database",
+    "version": "2025"
+   }
+  ],
+  "exemptedEmissionsPercent": 2.5,
+  "exemptedEmissionsDescription": "Capital goods and overheads excluded.",
+  "packagingEmissionsIncluded": false,
+  "primaryDataShare": 53.0,
+  "dqi": {
+   "coveragePercent": 92.0,
+   "technologicalDQR": 1.4,
+   "temporalDQR": 2.0,
+   "geographicalDQR": 1.4,
+   "completenessDQR": 1.4,
+   "reliabilityDQR": 1.4
+  },
+  "assurance": {
+   "assurance": true,
+   "coverage": "product line",
+   "level": "limited"
+  }
+ }
+}

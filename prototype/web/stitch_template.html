@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AgroScope360 — Corporate ESG &amp; Climate Intelligence Dashboard</title>
+<!-- Material Symbols Outlined font -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Plus Jakarta Sans & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface": "#f8f9ff",
+            "on-secondary-container": "#5c647a",
+            "on-background": "#0b1c30",
+            "error": "#ba1a1a",
+            "error-container": "#ffdad6",
+            "inverse-surface": "#213145",
+            "tertiary": "#006194",
+            "secondary-fixed": "#dae2fd",
+            "surface-container-high": "#dce9ff",
+            "primary-fixed": "#85f8c4",
+            "surface-bright": "#f8f9ff",
+            "outline-variant": "#bccac0",
+            "tertiary-container": "#007bb9",
+            "surface-container-lowest": "#ffffff",
+            "inverse-primary": "#68dba9",
+            "tertiary-fixed": "#cce5ff",
+            "on-tertiary-fixed": "#001d31",
+            "background": "#f8f9ff",
+            "on-primary": "#ffffff",
+            "on-tertiary-container": "#fdfcff",
+            "secondary-container": "#dae2fd",
+            "on-primary-fixed-variant": "#005137",
+            "outline": "#6d7a72",
+            "secondary-fixed-dim": "#bec6e0",
+            "primary-container": "#00855d",
+            "surface-tint": "#006c4a",
+            "primary": "#006948",
+            "surface-dim": "#cbdbf5",
+            "on-surface": "#0b1c30",
+            "surface-container-highest": "#d3e4fe",
+            "on-error-container": "#93000a",
+            "tertiary-fixed-dim": "#93ccff",
+            "on-primary-container": "#f5fff7",
+            "surface-container-low": "#eff4ff",
+            "surface-container": "#e5eeff",
+            "on-secondary-fixed": "#131b2e",
+            "on-secondary-fixed-variant": "#3f465c",
+            "secondary": "#565e74",
+            "inverse-on-surface": "#eaf1ff",
+            "on-tertiary": "#ffffff",
+            "on-error": "#ffffff",
+            "surface-variant": "#d3e4fe",
+            "on-primary-fixed": "#002114",
+            "on-tertiary-fixed-variant": "#004b73",
+            "on-surface-variant": "#3d4a42",
+            "on-secondary": "#ffffff",
+            "primary-fixed-dim": "#68dba9"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "margin-desktop": "2.5rem",
+            "space-xs": "0.25rem",
+            "gutter-desktop": "1.5rem",
+            "gutter": "1.25rem",
+            "space-lg": "1.25rem",
+            "space-md": "0.875rem",
+            "margin": "1rem",
+            "space-xl": "2rem",
+            "space-sm": "0.5rem",
+            "margin-tablet": "1.5rem"
+          },
+          "fontFamily": {
+            "body-lg": ["Inter"],
+            "headline-xl": ["Plus Jakarta Sans"],
+            "body-sm": ["Inter"],
+            "label-md": ["Inter"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "body-md": ["Inter"],
+            "headline-xl-mobile": ["Plus Jakarta Sans"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Plus Jakarta Sans"],
+            "label-sm": ["Inter"],
+            "data-mono": ["Inter"],
+            "kpi-value": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "headline-xl": ["36px", { "lineHeight": "44px", "fontWeight": "700" }],
+            "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "label-md": ["13px", { "lineHeight": "18px", "fontWeight": "500" }],
+            "headline-lg": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+            "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "headline-xl-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "700" }],
+            "headline-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "headline-lg-mobile": ["22px", { "lineHeight": "30px", "fontWeight": "600" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "600" }],
+            "data-mono": ["13px", { "lineHeight": "18px", "fontWeight": "500" }],
+            "kpi-value": ["32px", { "lineHeight": "38px", "fontWeight": "700" }],
+            "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }]
+          }
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-background text-on-surface antialiased flex h-screen overflow-hidden selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- LEFT SIDEBAR NAVIGATION (Shared Component: SideNavBar) -->
+<aside class="w-72 h-screen flex flex-col justify-between p-4 border-r border-outline-variant/40 bg-surface-container-lowest flex-shrink-0 z-40 select-none">
+<!-- Top Branding & Perspectives -->
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-3 px-1 py-1">
+<div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-on-primary shadow-sm flex-shrink-0">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">eco</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="text-headline-sm font-headline-sm font-bold text-on-surface tracking-tight truncate">AgroScope360</span>
+<span class="text-label-sm font-label-sm text-secondary truncate">Agri-Food Climate &amp; Nature Intelligence</span>
+</div>
+</div>
+<!-- Scope Switcher / Perspective Dropdown -->
+<div class="bg-surface-container-low border border-outline-variant/40 rounded-lg p-2 flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary text-sm">filter_alt</span>
+<div class="flex flex-col min-w-0">
+<span class="text-[10px] uppercase font-bold text-secondary tracking-wider">Operational Scope</span>
+<span class="text-label-sm font-label-sm font-semibold text-on-surface truncate">Finland &amp; Baltics Group</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-sm">unfold_more</span>
+</div>
+<!-- Nav Links List (13 items, item 1 active) -->
+<nav class="flex flex-col gap-0.5 overflow-y-auto max-h-[calc(100vh-270px)] pr-1">
+<!-- 1. Executive Overview (ACTIVE) -->
+<a class="flex items-center gap-3 px-3 py-2 text-primary bg-surface-container-low border-r-2 border-primary font-semibold text-label-md rounded-l-lg transition-colors duration-150" href="#overview">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+<span class="truncate">Executive Overview</span>
+</a>
+<!-- 2. Smart ESG Report Generator -->
+<a class="flex items-center justify-between px-3 py-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low text-label-md rounded-lg transition-colors duration-150 group" href="#reports">
+<div class="flex items-center gap-3 truncate">
+<span class="material-symbols-outlined text-secondary group-hover:text-primary transition-colors">description</span>
+<span class="truncate">Smart ESG Report Generator</span>
+</div>
+<span class="px-1.5 py-0.5 text-[10px] font-bold rounded bg-primary-fixed text-on-primary-fixed">6 Ready</span>
+</a>
+<!-- 3. AI Trade-off Intelligence -->
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low text-label-md rounded-lg transition-colors duration-150 group" href="#tradeoffs">
+<span class="material-symbols-outlined text-secondary group-hover:text-primary transition-colors">balance</span>
+<span class="truncate">AI Trade-off Intelligence</span>
+</a>
+<!-- 4. Sustainability Investment Optimiser -->
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low text-label-md rounded-lg transition-colors duration-150 group" href="#investments">
+<span class="material-symbols-outlined text-secondary group-hover:text-primary transition-colors">trending_up</span>
+<span class="truncate">Sustainability Investment Optimiser</span>
+</a>
+<!-- 5. AI What-If Simulator -->
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low text-label-md rounded-lg transition-colors duration-150 group" href="#simulator">
+<span class="material-symbols-outlined text-secondary group-hover:text-primary transition-colors">science</span>
+<span class="truncate">AI What-If Simulator</span>
+</a>
+<!-- 6. Farm Digital Twin -->
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low text-label-md rounded-lg transition-colors duration-150 group" href="#twin">
+<span class="material-symbols-outlined text-secondary group-hover:text-primary transition-colors">agriculture</span>
+<span class="truncate">Farm Digital Twin</span>
+</a>
+<!-- 7. Biodiversity & Nature Hotspots -->
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low text-label-md rounded-lg transition-colors duration-150 group" href="#biodiversity">
+<span class="material-symbols-outlined text-secondary group-hover:text-primary transition-colors">forest</span>
+<span class="truncate">Biodiversity &amp; Nature Hotspots</span>
+</a>
+<!-- 8. Geospatial Command Center -->
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low text-label-md rounded-lg transition-colors duration-150 group" href="#geospatial">
+<span class="material-symbols-outlined text-secondary group-hover:text-primary transition-colors">public</span>
+<span class="truncate">Geospatial Command Center</span>
+</a>
+<!-- 9. GHG Inventory -->
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low text-label-md rounded-lg transition-colors duration-150 group" href="#ghg">
+<span class="material-symbols-outlined text-secondary group-hover:text-primary transition-colors">co2</span>
+<span class="truncate">GHG Inventory</span>
+</a>
+<!-- 10. Agronomic Climate Risk -->
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low text-label-md rounded-lg transition-colors duration-150 group" href="#risk">
+<span class="material-symbols-outlined text-secondary group-hover:text-primary transition-colors">warning</span>
+<span class="truncate">Agronomic Climate Risk</span>
+</a>
+<!-- 11. Nature & Catchments (SBTN) -->
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low text-label-md rounded-lg transition-colors duration-150 group" href="#sbtn">
+<span class="material-symbols-outlined text-secondary group-hover:text-primary transition-colors">water_drop</span>
+<span class="truncate">Nature &amp; Catchments (SBTN)</span>
+</a>
+<!-- 12. Decarbonisation & MACC -->
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low text-label-md rounded-lg transition-colors duration-150 group" href="#macc">
+<span class="material-symbols-outlined text-secondary group-hover:text-primary transition-colors">energy_savings_leaf</span>
+<span class="truncate">Decarbonisation &amp; MACC</span>
+</a>
+<!-- 13. AI Research Assistant -->
+<a class="flex items-center gap-3 px-3 py-2 text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low text-label-md rounded-lg transition-colors duration-150 group" href="#assistant">
+<span class="material-symbols-outlined text-tertiary-container group-hover:text-tertiary transition-colors">smart_toy</span>
+<span class="truncate text-on-surface font-medium">AI Research Assistant</span>
+</a>
+</nav>
+</div>
+<!-- Sidebar Footer -->
+<div class="flex flex-col gap-3 pt-3 border-t border-outline-variant/40">
+<!-- Assurance Verification Stamp -->
+<div class="bg-surface-container-low rounded-lg p-2.5 flex items-center justify-between border border-outline-variant/30">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<div class="flex flex-col">
+<span class="text-[11px] font-bold text-on-surface tracking-tight">Nordic CSRD v2.4</span>
+<span class="text-[10px] text-primary font-medium">Audit XBRL Ready</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-base hover:text-on-surface cursor-pointer">settings</span>
+</div>
+<!-- User Profile Ribbon -->
+<div class="flex items-center gap-2.5 px-1 py-1">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-fixed flex items-center justify-center font-bold text-xs">
+          EM
+        </div>
+<div class="flex flex-col min-w-0">
+<span class="text-label-md font-label-md font-semibold text-on-surface truncate">Esa Mäkinen</span>
+<span class="text-[10px] text-secondary truncate">Head of Agronomy &amp; ESG</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-sm ml-auto cursor-pointer">more_vert</span>
+</div>
+</div>
+</aside>
+<!-- MAIN VIEWPORT CONTAINER -->
+<div class="flex-1 flex flex-col h-screen overflow-hidden min-w-0">
+<!-- TOP HEADER BAR (Shared Component: TopNavBar) -->
+<header class="flex justify-between items-center h-16 w-full px-6 bg-surface border-b border-outline-variant/40 sticky top-0 z-30 flex-shrink-0">
+<!-- Left: Omnisearch & Filter Pills -->
+<div class="flex items-center gap-4 flex-1 max-w-xl">
+<div class="relative w-full max-w-md">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-secondary text-lg">search</span>
+<input class="w-full h-9 pl-9 pr-12 bg-surface-container-lowest border border-outline-variant/50 rounded-lg text-body-sm font-body-sm text-on-surface placeholder:text-secondary focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" placeholder="Search parcels, indicators, CSRD metrics... [⌘K]" type="text"/>
+<kbd class="absolute right-2.5 top-2.5 px-1.5 py-0.5 text-[9px] font-semibold text-secondary bg-surface-container border border-outline-variant/40 rounded">⌘K</kbd>
+</div>
+</div>
+<!-- Center Status Badges -->
+<div class="hidden xl:flex items-center gap-3">
+<!-- Live Parcel Telemetry -->
+<div class="flex items-center gap-2 px-3 py-1 bg-surface-container-lowest border border-outline-variant/40 rounded-full text-label-sm font-label-sm text-on-surface">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="font-data-mono font-medium">14,213 Parcels · 680 Farms Monitored</span>
+</div>
+<!-- Dual-Blind Governance Indicator -->
+<div class="flex items-center gap-1.5 px-3 py-1 bg-surface-container-lowest border border-outline-variant/40 rounded-full text-label-sm font-label-sm text-secondary">
+<span class="material-symbols-outlined text-primary text-sm" style="font-variation-settings: 'FILL' 1;">security</span>
+<span>Synthetic Data Governance: <strong class="text-on-surface font-semibold">Active (Dual-Blind)</strong></span>
+</div>
+</div>
+<!-- Right Action Controls -->
+<div class="flex items-center gap-3">
+<div class="flex items-center gap-1 bg-surface-container-low border border-outline-variant/40 rounded-lg p-0.5">
+<button class="px-3 py-1 text-label-sm font-label-sm font-medium text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest rounded transition-colors duration-150 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">verified</span>
+<span>Audit XBRL</span>
+</button>
+<button class="px-3 py-1 text-label-sm font-label-sm font-semibold bg-primary text-on-primary rounded shadow-sm hover:bg-primary-container transition-colors duration-150 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">download</span>
+<span>Export Dossier</span>
+</button>
+</div>
+<div class="h-6 w-px bg-outline-variant/40 mx-1"></div>
+<button class="relative p-2 text-secondary hover:text-on-surface hover:bg-surface-container-low rounded-lg transition-colors duration-150" title="Notifications">
+<span class="material-symbols-outlined text-xl">notifications</span>
+<span class="absolute top-1.5 right-1.5 w-4 h-4 bg-error text-on-error rounded-full text-[9px] font-bold flex items-center justify-center">3</span>
+</button>
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface font-bold text-xs border border-outline-variant/50 cursor-pointer" title="User Profile Avatar">
+<span class="material-symbols-outlined text-base text-secondary">manage_accounts</span>
+</div>
+</div>
+</header>
+<!-- DASHBOARD SCROLLABLE CANVAS -->
+<main class="flex-1 overflow-y-auto p-6 flex flex-col gap-6">
+<!-- SECTION 1: EXECUTIVE KPI RIBBON (5 Crisp Metric Tiles) -->
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+<!-- KPI 1: Group GHG Total -->
+<div class="bg-surface-container-lowest border border-outline-variant/40 rounded-lg p-4 flex flex-col justify-between hover:border-outline-variant transition-all shadow-[0_1px_3px_rgba(15,23,42,0.03)] border-t-2 border-t-primary">
+<div class="flex items-center justify-between text-secondary">
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-secondary">2025 Group GHG Total</span>
+<span class="material-symbols-outlined text-sm text-primary">co2</span>
+</div>
+<div class="my-2">
+<div class="text-kpi-value font-kpi-value text-on-surface tracking-tight">85,627 <span class="text-sm font-body-sm font-normal text-secondary">tCO2e</span></div>
+</div>
+<div class="flex items-center justify-between text-[11px] pt-2 border-t border-surface-container-low">
+<span class="text-primary font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-xs">trending_down</span>
+              -4.2% vs 2024
+            </span>
+<span class="text-secondary font-data-mono">Scope 1, 2 &amp; 3</span>
+</div>
+</div>
+<!-- KPI 2: FLAG Land Share -->
+<div class="bg-surface-container-lowest border border-outline-variant/40 rounded-lg p-4 flex flex-col justify-between hover:border-outline-variant transition-all shadow-[0_1px_3px_rgba(15,23,42,0.03)] border-t-2 border-t-primary">
+<div class="flex items-center justify-between text-secondary">
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-secondary">FLAG Land Share</span>
+<span class="material-symbols-outlined text-sm text-primary">agriculture</span>
+</div>
+<div class="my-2">
+<div class="text-kpi-value font-kpi-value text-on-surface tracking-tight">42.3%</div>
+</div>
+<div class="flex items-center justify-between text-[11px] pt-2 border-t border-surface-container-low">
+<span class="px-1.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-semibold text-[10px]">SBTi Compliant</span>
+<span class="text-secondary font-data-mono">36,220 tCO2e</span>
+</div>
+</div>
+<!-- KPI 3: Pea Climate Yield Risk -->
+<div class="bg-surface-container-lowest border border-outline-variant/40 rounded-lg p-4 flex flex-col justify-between hover:border-outline-variant transition-all shadow-[0_1px_3px_rgba(15,23,42,0.03)] border-t-2 border-t-amber-500">
+<div class="flex items-center justify-between text-secondary">
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-secondary">Pea Climate Yield Risk</span>
+<span class="material-symbols-outlined text-sm text-amber-600">warning</span>
+</div>
+<div class="my-2">
+<div class="text-kpi-value font-kpi-value text-amber-700 tracking-tight">-8.4%</div>
+</div>
+<div class="flex items-center justify-between text-[11px] pt-2 border-t border-surface-container-low">
+<span class="px-1.5 py-0.5 rounded bg-amber-100 text-amber-800 font-semibold text-[10px]">Summer Heat Stress</span>
+<span class="text-secondary font-data-mono">Säkylä Hub</span>
+</div>
+</div>
+<!-- KPI 4: Nature Hotspots -->
+<div class="bg-surface-container-lowest border border-outline-variant/40 rounded-lg p-4 flex flex-col justify-between hover:border-outline-variant transition-all shadow-[0_1px_3px_rgba(15,23,42,0.03)] border-t-2 border-t-tertiary">
+<div class="flex items-center justify-between text-secondary">
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-secondary">Nature Hotspots</span>
+<span class="material-symbols-outlined text-sm text-tertiary">water_drop</span>
+</div>
+<div class="my-2">
+<div class="text-kpi-value font-kpi-value text-on-surface tracking-tight">6 <span class="text-sm font-body-sm font-normal text-secondary">Catchments</span></div>
+</div>
+<div class="flex items-center justify-between text-[11px] pt-2 border-t border-surface-container-low">
+<span class="px-1.5 py-0.5 rounded bg-secondary-container text-on-secondary-fixed font-semibold text-[10px]">SBTN Step 3</span>
+<span class="text-secondary">Freshwater audit</span>
+</div>
+</div>
+<!-- KPI 5: 2030 Abatement Runway -->
+<div class="bg-surface-container-lowest border border-outline-variant/40 rounded-lg p-4 flex flex-col justify-between hover:border-outline-variant transition-all shadow-[0_1px_3px_rgba(15,23,42,0.03)] border-t-2 border-t-primary">
+<div class="flex items-center justify-between text-secondary">
+<span class="text-label-sm font-label-sm uppercase tracking-wider text-secondary">2030 Abatement Runway</span>
+<span class="material-symbols-outlined text-sm text-primary">energy_savings_leaf</span>
+</div>
+<div class="my-2">
+<div class="text-kpi-value font-kpi-value text-on-surface tracking-tight">14,820 <span class="text-sm font-body-sm font-normal text-secondary">t/yr</span></div>
+</div>
+<div class="flex items-center justify-between text-[11px] pt-2 border-t border-surface-container-low">
+<div class="flex items-center gap-1.5 w-full">
+<div class="flex-1 bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary h-full w-[68%] rounded-full"></div>
+</div>
+<span class="font-data-mono font-semibold text-primary">68% Net-Zero</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: AI TRADE-OFF INTELLIGENCE SECTION -->
+<section class="bg-surface-container-lowest border border-outline-variant/40 rounded-xl p-6 shadow-[0_1px_3px_rgba(15,23,42,0.03)] flex flex-col gap-6" id="tradeoffs">
+<!-- Header & Simulation Scope -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-3 pb-4 border-b border-outline-variant/30">
+<div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded text-[11px] font-bold uppercase bg-surface-container text-primary border border-outline-variant/40">Multi-Criteria Optimization</span>
+<span class="text-label-sm font-label-sm text-secondary">Simulated on 1,420 Ha Green Pea &amp; Root Crop Parcels</span>
+</div>
+<h2 class="text-headline-md font-headline-md text-on-surface mt-1">
+              AI Trade-off Intelligence — Intervention Analysis: "Improve Irrigation Efficiency" (Precision Drip &amp; Soil Probes)
+            </h2>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 border border-outline-variant/50 rounded-lg text-label-sm font-label-sm text-on-surface hover:bg-surface-container-low transition-colors duration-150 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">tune</span>
+<span>Re-run Parameters</span>
+</button>
+<button class="px-3 py-1.5 bg-primary text-on-primary rounded-lg text-label-sm font-label-sm font-semibold hover:bg-primary-container transition-colors duration-150 flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">commit</span>
+<span>Adopt to Transition Plan</span>
+</button>
+</div>
+</div>
+<!-- 4 Metric Comparison Cards Side-by-Side -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- Metric 1: Water Use -->
+<div class="p-4 rounded-lg bg-surface-container-low border border-outline-variant/40 flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="text-label-sm font-label-sm font-medium uppercase tracking-wider">Water Extraction</span>
+<span class="material-symbols-outlined text-tertiary text-base">water_drop</span>
+</div>
+<div class="my-2">
+<div class="text-3xl font-headline-lg font-bold text-tertiary-container">-20%</div>
+<div class="text-body-sm font-body-sm text-secondary mt-0.5">~280,000 m³ saved annually</div>
+</div>
+<div class="text-[11px] font-medium text-tertiary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">check_circle</span>
+              High freshwater relief in Säkylä
+            </div>
+</div>
+<!-- Metric 2: Crop Resilience -->
+<div class="p-4 rounded-lg bg-surface-container-low border border-outline-variant/40 flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="text-label-sm font-label-sm font-medium uppercase tracking-wider">Crop Resilience</span>
+<span class="material-symbols-outlined text-primary text-base">psychiatry</span>
+</div>
+<div class="my-2">
+<div class="text-3xl font-headline-lg font-bold text-primary">Improved</div>
+<div class="text-body-sm font-body-sm text-secondary mt-0.5">Drought vulnerability -31%</div>
+</div>
+<div class="text-[11px] font-medium text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">trending_up</span>
+              Preserves pea harvest grade 1 quality
+            </div>
+</div>
+<!-- Metric 3: Investment Cost -->
+<div class="p-4 rounded-lg bg-surface-container-low border border-outline-variant/40 flex flex-col justify-between">
+<div class="flex items-center justify-between text-secondary">
+<span class="text-label-sm font-label-sm font-medium uppercase tracking-wider">Intervention Capex</span>
+<span class="material-symbols-outlined text-secondary text-base">euro</span>
+</div>
+<div class="my-2">
+<div class="text-3xl font-headline-lg font-bold text-on-surface">€15,000</div>
+<div class="text-body-sm font-body-sm text-secondary mt-0.5">Per cluster · Payback 2.4 yrs</div>
+</div>
+<div class="text-[11px] font-medium text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">savings</span>
+              EU Common Ag Policy subsidy eligible
+            </div>
+</div>
+<!-- Metric 4: Trade-off Warning (Grid kWh Increase) -->
+<div class="p-4 rounded-lg bg-amber-50/70 border border-amber-200/80 flex flex-col justify-between">
+<div class="flex items-center justify-between text-amber-800">
+<span class="text-label-sm font-label-sm font-medium uppercase tracking-wider">Trade-off Risk</span>
+<span class="material-symbols-outlined text-amber-600 text-base">bolt</span>
+</div>
+<div class="my-2">
+<div class="text-3xl font-headline-lg font-bold text-amber-700">+12% kWh</div>
+<div class="text-body-sm font-body-sm text-amber-900/80 mt-0.5">Increased localized pumping energy</div>
+</div>
+<div class="text-[11px] font-semibold text-amber-800 flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">warning</span>
+              Scope 2 indirect emissions penalty
+            </div>
+</div>
+</div>
+<!-- AI Synthesis Callout Banner -->
+<div class="p-4 rounded-lg bg-primary/5 border border-primary/20 flex items-start gap-3.5">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-base">smart_toy</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="text-label-md font-label-md font-bold text-primary">AI Synthesis &amp; Trade-off Resolution</span>
+<span class="px-2 py-0.5 text-[10px] font-semibold rounded bg-primary-fixed text-on-primary-fixed">Net Positive +8.6 Pts</span>
+</div>
+<p class="text-body-md font-body-md text-on-surface leading-relaxed">
+              Net positive ecological &amp; resilience impact (+8.6 index points). <strong>Secondary mitigation required:</strong> Solar-powered localized booster pumps offset the +12% grid energy increase, eliminating the 3.2 tCO2e Scope 2 penalty while preserving the 280,000 m³ water conservation milestone.
+            </p>
+</div>
+</div>
+<!-- Dual Analytical Comparison Cards below: Radar Spider + Mitigation Playbook -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+<!-- Left: 5-axis Radar / Spider Chart (7 cols) -->
+<div class="lg:col-span-7 bg-surface border border-outline-variant/40 rounded-lg p-5 flex flex-col justify-between">
+<div class="flex items-center justify-between pb-3 border-b border-outline-variant/30">
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">5-Axis Impact Trade-off Balance</h3>
+<span class="text-label-sm font-label-sm text-secondary">Comparing Current Baseline against Precision Drip Simulation</span>
+</div>
+<div class="flex items-center gap-3 text-label-sm font-label-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-0.5 bg-secondary rounded-full"></span>
+<span class="text-secondary">Current Baseline</span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-3 h-1 bg-primary rounded-full"></span>
+<span class="text-primary font-semibold">Proposed Intervention</span>
+</div>
+</div>
+</div>
+<!-- SVG Multi-Axis Radar Chart Container -->
+<div class="relative py-4 flex items-center justify-center min-h-[300px]">
+<svg class="w-full max-w-[420px] h-auto overflow-visible" viewbox="0 0 400 320">
+<!-- Concentric Polygons (Pentagons) -->
+<!-- Grid level 20% -->
+<polygon fill="none" opacity="0.6" points="200,132 238,159 223,205 177,205 162,159" stroke="#bccac0" stroke-dasharray="2 2" stroke-width="0.75"></polygon>
+<!-- Grid level 40% -->
+<polygon fill="none" opacity="0.6" points="200,104 276,158 246,230 154,230 124,158" stroke="#bccac0" stroke-dasharray="2 2" stroke-width="0.75"></polygon>
+<!-- Grid level 60% -->
+<polygon fill="none" opacity="0.6" points="200,76 314,157 269,255 131,255 86,157" stroke="#bccac0" stroke-dasharray="2 2" stroke-width="0.75"></polygon>
+<!-- Grid level 80% -->
+<polygon fill="none" opacity="0.6" points="200,48 352,156 292,280 108,280 48,156" stroke="#bccac0" stroke-dasharray="2 2" stroke-width="0.75"></polygon>
+<!-- Grid level 100% (Outer Rim) -->
+<polygon fill="none" opacity="0.9" points="200,20 390,155 315,305 85,305 10,155" stroke="#bccac0" stroke-width="1.2"></polygon>
+<!-- Axis Lines from Center (200, 160) -->
+<line stroke="#bccac0" stroke-dasharray="3 3" stroke-width="1" x1="200" x2="200" y1="160" y2="20"></line>
+<line stroke="#bccac0" stroke-dasharray="3 3" stroke-width="1" x1="200" x2="390" y1="160" y2="155"></line>
+<line stroke="#bccac0" stroke-dasharray="3 3" stroke-width="1" x1="200" x2="315" y1="160" y2="305"></line>
+<line stroke="#bccac0" stroke-dasharray="3 3" stroke-width="1" x1="200" x2="85" y1="160" y2="305"></line>
+<line stroke="#bccac0" stroke-dasharray="3 3" stroke-width="1" x1="200" x2="10" y1="160" y2="155"></line>
+<!-- Baseline Polygon (Grey dashed fill) -->
+<!-- Values: Water=50, Capex=75, Soil=60, Yield=55, Energy=80 -->
+<polygon fill="#64748b" fill-opacity="0.12" points="200,90 342,156 269,247 136,239 48,156" stroke="#64748b" stroke-dasharray="4 3" stroke-width="1.75"></polygon>
+<!-- Proposed Intervention Polygon (Emerald Primary filled) -->
+<!-- Values: Water=95 (200, 27), Capex=55 (304, 157), Soil=85 (297, 283), Yield=88 (98, 287), Energy=48 (108, 157) -->
+<polygon fill="#006948" fill-opacity="0.25" points="200,27 304,157 297,283 98,287 108,157" stroke="#006948" stroke-width="2.5"></polygon>
+<!-- Points for Proposed -->
+<circle cx="200" cy="27" fill="#006948" r="4" stroke="#ffffff" stroke-width="1.5"></circle>
+<circle cx="304" cy="157" fill="#006948" r="4" stroke="#ffffff" stroke-width="1.5"></circle>
+<circle cx="297" cy="283" fill="#006948" r="4" stroke="#ffffff" stroke-width="1.5"></circle>
+<circle cx="98" cy="287" fill="#006948" r="4" stroke="#ffffff" stroke-width="1.5"></circle>
+<circle cx="108" cy="157" fill="#ba1a1a" r="4" stroke="#ffffff" stroke-width="1.5"></circle>
+<!-- Axis Labels -->
+<text class="text-[11px] font-bold fill-on-surface" text-anchor="middle" x="200" y="12">Water Efficiency (95%)</text>
+<text class="text-[11px] font-bold fill-on-surface" text-anchor="start" x="395" y="158">Capex Margin (55%)</text>
+<text class="text-[11px] font-bold fill-on-surface" text-anchor="middle" x="325" y="320">Soil Quality (85%)</text>
+<text class="text-[11px] font-bold fill-on-surface" text-anchor="middle" x="75" y="320">Yield Stability (88%)</text>
+<text class="text-[11px] font-bold fill-error" text-anchor="end" x="5" y="158">Energy Carbon (48%)</text>
+</svg>
+</div>
+<!-- Key Footnote -->
+<div class="flex items-center justify-between text-[11px] text-secondary border-t border-outline-variant/30 pt-2.5">
+<span>Simulation Engine: Bio-Hydro Crop Model v4.2</span>
+<span>Convergence Error: &lt;0.04%</span>
+</div>
+</div>
+<!-- Right: Mitigation Playbook & Action Plan (5 cols) -->
+<div class="lg:col-span-5 bg-surface border border-outline-variant/40 rounded-lg p-5 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-3 border-b border-outline-variant/30">
+<h3 class="text-headline-sm font-headline-sm text-on-surface">Mitigation Playbook &amp; Action Plan</h3>
+<span class="px-2 py-0.5 text-[10px] font-bold rounded bg-primary-fixed text-on-primary-fixed">3 Required</span>
+</div>
+<p class="text-body-sm font-body-sm text-secondary mt-2">Recommended technical controls to counteract localized energy intensity spikes:</p>
+<!-- Action Checklist -->
+<div class="flex flex-col gap-3 mt-4">
+<!-- Action 1 -->
+<div class="p-3 rounded-lg border border-outline-variant/40 bg-surface-container-lowest flex items-start gap-3 hover:border-primary transition-colors">
+<div class="w-6 h-6 rounded bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-sm font-bold">solar_power</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="text-label-md font-label-md font-semibold text-on-surface truncate">1. Micro-Solar Inverter Pairing</span>
+<span class="text-[10px] font-bold text-primary">Ready to deploy</span>
+</div>
+<p class="text-[11px] text-secondary mt-0.5">Equip 12 farm clusters with 18kW decentralized photovoltaic panels to zero out daytime pump surge.</p>
+</div>
+</div>
+<!-- Action 2 -->
+<div class="p-3 rounded-lg border border-outline-variant/40 bg-surface-container-lowest flex items-start gap-3 hover:border-primary transition-colors">
+<div class="w-6 h-6 rounded bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-sm font-bold">schedule</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="text-label-md font-label-md font-semibold text-on-surface truncate">2. Night-Cycle Pumping Schedule</span>
+<span class="text-[10px] font-bold text-tertiary">Automated Rule</span>
+</div>
+<p class="text-[11px] text-secondary mt-0.5">Automate irrigation to run between 23:00 - 04:00 when grid emission factor drops to 14g CO2/kWh.</p>
+</div>
+</div>
+<!-- Action 3 -->
+<div class="p-3 rounded-lg border border-outline-variant/40 bg-surface-container-lowest flex items-start gap-3 hover:border-primary transition-colors">
+<div class="w-6 h-6 rounded bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-sm font-bold">water</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="text-label-md font-label-md font-semibold text-on-surface truncate">3. SBTN Recharge Basin Credit</span>
+<span class="text-[10px] font-bold text-secondary">Assurance Pending</span>
+</div>
+<p class="text-[11px] text-secondary mt-0.5">Register artificial wetland drainage buffer for SBTN Step 4 freshwater neutrality credit.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Confirmation Action -->
+<div class="pt-4 border-t border-outline-variant/30 flex items-center justify-between mt-4">
+<span class="text-[11px] text-secondary">Total Projected Mitigation Capex: <strong>€38,500</strong></span>
+<button class="px-3 py-1.5 bg-on-surface text-surface rounded-lg text-label-sm font-label-sm font-semibold hover:bg-on-surface/90 transition-colors flex items-center gap-1">
+<span>Bundle &amp; Stage Changes</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: SMART ESG REPORT GENERATOR & SLIDE-OVER EVIDENCE DRAWER -->
+<section class="grid grid-cols-1 xl:grid-cols-12 gap-6 items-start" id="reports">
+<!-- Left: 2x3 Grid of Reporting Framework Cards (8 cols) -->
+<div class="xl:col-span-8 bg-surface-container-lowest border border-outline-variant/40 rounded-xl p-6 shadow-[0_1px_3px_rgba(15,23,42,0.03)] flex flex-col gap-6">
+<!-- Section Heading -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-3 border-b border-outline-variant/30">
+<div>
+<div class="flex items-center gap-2">
+<h2 class="text-headline-md font-headline-md text-on-surface">Smart ESG Report Generator</h2>
+<span class="px-2 py-0.5 rounded text-[11px] font-bold bg-primary-fixed text-on-primary-fixed">XBRL Digital Tagging v2.4</span>
+</div>
+<p class="text-body-sm font-body-sm text-secondary mt-0.5">Cross-framework automated disclosure compilation and European Single Electronic Format (ESEF) export.</p>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 border border-outline-variant/50 rounded-lg text-label-sm font-label-sm text-on-surface hover:bg-surface-container-low transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">refresh</span>
+<span>Sync Data Layer</span>
+</button>
+</div>
+</div>
+<!-- 2x3 Framework Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+<!-- 1. CDP (Climate Disclosure) - 52% -->
+<div class="p-4 rounded-lg bg-surface border border-outline-variant/40 flex flex-col justify-between hover:border-outline-variant transition-all">
+<div class="flex items-start justify-between">
+<div>
+<div class="text-label-sm font-label-sm uppercase font-bold text-secondary">CDP 2025</div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface mt-0.5">Climate &amp; Water</h4>
+</div>
+<!-- Circular SVG Progress Ring (52%) -->
+<div class="relative w-11 h-11 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 36 36">
+<circle cx="18" cy="18" fill="none" r="14" stroke="#e2e8f0" stroke-width="3.5"></circle>
+<circle cx="18" cy="18" fill="none" r="14" stroke="#00855d" stroke-dasharray="88" stroke-dashoffset="42" stroke-linecap="round" stroke-width="3.5"></circle>
+</svg>
+<span class="absolute text-[10px] font-bold font-data-mono text-on-surface">52%</span>
+</div>
+</div>
+<div class="my-3 space-y-1">
+<div class="text-[11px] text-secondary flex items-center justify-between">
+<span>Scope 1, 2, 3 + FLAG</span>
+<span class="font-medium text-on-surface">38/72 items</span>
+</div>
+<div class="text-[11px] text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-amber-600">event</span>
+<span>Deadline: <strong>31 Jul 2025</strong></span>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-2 border-t border-outline-variant/30">
+<button class="flex-1 py-1 text-label-sm font-label-sm border border-outline-variant/50 rounded hover:bg-surface-container-lowest transition-colors text-on-surface">View Disclosures</button>
+<button class="px-2 py-1 text-label-sm font-label-sm bg-surface-container text-secondary hover:text-on-surface rounded transition-colors" title="Export XBRL">XBRL</button>
+</div>
+</div>
+<!-- 2. GRI (Global Reporting) - 68% -->
+<div class="p-4 rounded-lg bg-surface border border-outline-variant/40 flex flex-col justify-between hover:border-outline-variant transition-all">
+<div class="flex items-start justify-between">
+<div>
+<div class="text-label-sm font-label-sm uppercase font-bold text-secondary">GRI Standards</div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface mt-0.5">Agriculture Sector</h4>
+</div>
+<!-- Circular SVG Progress Ring (68%) -->
+<div class="relative w-11 h-11 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 36 36">
+<circle cx="18" cy="18" fill="none" r="14" stroke="#e2e8f0" stroke-width="3.5"></circle>
+<circle cx="18" cy="18" fill="none" r="14" stroke="#00855d" stroke-dasharray="88" stroke-dashoffset="28" stroke-linecap="round" stroke-width="3.5"></circle>
+</svg>
+<span class="absolute text-[10px] font-bold font-data-mono text-on-surface">68%</span>
+</div>
+</div>
+<div class="my-3 space-y-1">
+<div class="text-[11px] text-secondary flex items-center justify-between">
+<span>Topic Standard 13 (AFPB)</span>
+<span class="font-medium text-on-surface">42/61 items</span>
+</div>
+<div class="text-[11px] text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-amber-600">event</span>
+<span>Deadline: <strong>30 Sep 2025</strong></span>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-2 border-t border-outline-variant/30">
+<button class="flex-1 py-1 text-label-sm font-label-sm border border-outline-variant/50 rounded hover:bg-surface-container-lowest transition-colors text-on-surface">View Disclosures</button>
+<button class="px-2 py-1 text-label-sm font-label-sm bg-surface-container text-secondary hover:text-on-surface rounded transition-colors" title="Export PDF">PDF</button>
+</div>
+</div>
+<!-- 3. TCFD (Climate Financial) - 81% -->
+<div class="p-4 rounded-lg bg-surface border border-outline-variant/40 flex flex-col justify-between hover:border-outline-variant transition-all">
+<div class="flex items-start justify-between">
+<div>
+<div class="text-label-sm font-label-sm uppercase font-bold text-secondary">TCFD Report</div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface mt-0.5">Physical Risk &amp; MACC</h4>
+</div>
+<!-- Circular SVG Progress Ring (81%) -->
+<div class="relative w-11 h-11 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 36 36">
+<circle cx="18" cy="18" fill="none" r="14" stroke="#e2e8f0" stroke-width="3.5"></circle>
+<circle cx="18" cy="18" fill="none" r="14" stroke="#00855d" stroke-dasharray="88" stroke-dashoffset="17" stroke-linecap="round" stroke-width="3.5"></circle>
+</svg>
+<span class="absolute text-[10px] font-bold font-data-mono text-on-surface">81%</span>
+</div>
+</div>
+<div class="my-3 space-y-1">
+<div class="text-[11px] text-secondary flex items-center justify-between">
+<span>Governance &amp; Strategy</span>
+<span class="font-medium text-on-surface">17/21 items</span>
+</div>
+<div class="text-[11px] text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-amber-600">event</span>
+<span>Deadline: <strong>31 Aug 2025</strong></span>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-2 border-t border-outline-variant/30">
+<button class="flex-1 py-1 text-label-sm font-label-sm border border-outline-variant/50 rounded hover:bg-surface-container-lowest transition-colors text-on-surface">View Disclosures</button>
+<button class="px-2 py-1 text-label-sm font-label-sm bg-surface-container text-secondary hover:text-on-surface rounded transition-colors" title="Export XBRL">XBRL</button>
+</div>
+</div>
+<!-- 4. BRSR (Core ESG) - 100% Locked -->
+<div class="p-4 rounded-lg bg-primary/5 border border-primary/20 flex flex-col justify-between">
+<div class="flex items-start justify-between">
+<div>
+<div class="text-label-sm font-label-sm uppercase font-bold text-primary">BRSR Core</div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface mt-0.5">Assurance Locked</h4>
+</div>
+<!-- Circular SVG Progress Ring (100% with check) -->
+<div class="relative w-11 h-11 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 36 36">
+<circle cx="18" cy="18" fill="none" r="14" stroke="#85f8c4" stroke-width="3.5"></circle>
+<circle cx="18" cy="18" fill="none" r="14" stroke="#006948" stroke-dasharray="88" stroke-dashoffset="0" stroke-linecap="round" stroke-width="3.5"></circle>
+</svg>
+<span class="material-symbols-outlined text-primary text-base" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+</div>
+<div class="my-3 space-y-1">
+<div class="text-[11px] text-primary font-medium flex items-center justify-between">
+<span>KPMG Third-Party Certified</span>
+<span class="font-bold">100%</span>
+</div>
+<div class="text-[11px] text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-primary">lock</span>
+<span>Ledger Sealed: 12 Jan 2025</span>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-2 border-t border-primary/20">
+<button class="w-full py-1 text-label-sm font-label-sm bg-primary/10 hover:bg-primary/20 text-primary font-semibold rounded transition-colors flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-sm">lock</span>
+<span>Export Full Pack</span>
+</button>
+</div>
+</div>
+<!-- 5. CBAM (Carbon Border) - 50% -->
+<div class="p-4 rounded-lg bg-surface border border-outline-variant/40 flex flex-col justify-between hover:border-outline-variant transition-all">
+<div class="flex items-start justify-between">
+<div>
+<div class="text-label-sm font-label-sm uppercase font-bold text-secondary">CBAM EU</div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface mt-0.5">Fertilizer Embedded</h4>
+</div>
+<!-- Circular SVG Progress Ring (50%) -->
+<div class="relative w-11 h-11 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 36 36">
+<circle cx="18" cy="18" fill="none" r="14" stroke="#e2e8f0" stroke-width="3.5"></circle>
+<circle cx="18" cy="18" fill="none" r="14" stroke="#00855d" stroke-dasharray="88" stroke-dashoffset="44" stroke-linecap="round" stroke-width="3.5"></circle>
+</svg>
+<span class="absolute text-[10px] font-bold font-data-mono text-on-surface">50%</span>
+</div>
+</div>
+<div class="my-3 space-y-1">
+<div class="text-[11px] text-secondary flex items-center justify-between">
+<span>Nitrate Raw Material Scopes</span>
+<span class="font-medium text-on-surface">6/12 entries</span>
+</div>
+<div class="text-[11px] text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-amber-600">event</span>
+<span>Deadline: <strong>15 Oct 2025</strong></span>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-2 border-t border-outline-variant/30">
+<button class="flex-1 py-1 text-label-sm font-label-sm border border-outline-variant/50 rounded hover:bg-surface-container-lowest transition-colors text-on-surface">View Disclosures</button>
+<button class="px-2 py-1 text-label-sm font-label-sm bg-surface-container text-secondary hover:text-on-surface rounded transition-colors" title="Export XML">XML</button>
+</div>
+</div>
+<!-- 6. CSRD (ESRS E1-E5) - 100% READY -->
+<div class="p-4 rounded-lg bg-surface border-2 border-primary flex flex-col justify-between shadow-sm">
+<div class="flex items-start justify-between">
+<div>
+<div class="text-label-sm font-label-sm uppercase font-bold text-primary">EU CSRD Mandatory</div>
+<h4 class="text-headline-sm font-headline-sm text-on-surface mt-0.5">ESRS E1 - E5 Package</h4>
+</div>
+<!-- Circular SVG Progress Ring (100%) -->
+<div class="relative w-11 h-11 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 36 36">
+<circle cx="18" cy="18" fill="none" r="14" stroke="#d1fae5" stroke-width="3.5"></circle>
+<circle cx="18" cy="18" fill="none" r="14" stroke="#006948" stroke-dasharray="88" stroke-dashoffset="0" stroke-linecap="round" stroke-width="3.5"></circle>
+</svg>
+<span class="text-[10px] font-bold font-data-mono text-primary">100%</span>
+</div>
+</div>
+<div class="my-3 space-y-1">
+<div class="text-[11px] text-primary font-semibold flex items-center justify-between">
+<span>108/108 datapoints verified</span>
+<span class="px-1.5 py-0.2 rounded bg-primary-fixed text-on-primary-fixed text-[9px]">Assurance Ready</span>
+</div>
+<div class="text-[11px] text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs text-primary">verified</span>
+<span>ESEF XBRL Taxonomy v2024.1</span>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-2 border-t border-outline-variant/30">
+<button class="w-full py-1.5 text-label-sm font-label-sm bg-primary text-on-primary hover:bg-primary-container font-semibold rounded shadow-sm transition-all flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-sm">download</span>
+<span>Download XBRL Package</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: AI Sustainability Research Assistant & Slide-Over Evidence Drawer (4 cols) -->
+<div class="xl:col-span-4 bg-surface-container-lowest border border-outline-variant/40 rounded-xl p-5 shadow-[0_1px_3px_rgba(15,23,42,0.03)] flex flex-col justify-between min-h-[580px]" id="assistant">
+<!-- Drawer Header -->
+<div>
+<div class="flex items-center justify-between pb-3 border-b border-outline-variant/30">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-tertiary-container text-on-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-sm">smart_toy</span>
+</div>
+<div>
+<h3 class="text-headline-sm font-headline-sm text-on-surface">AI Research Assistant</h3>
+<span class="text-[10px] text-secondary">Grounded on Agronomic Sensory Feed</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-secondary-container text-on-secondary-fixed">LLM v3 Grounded</span>
+</div>
+<!-- Dialogue / Chat Feed -->
+<div class="flex flex-col gap-3.5 my-4">
+<!-- Assistant Response Bubble -->
+<div class="p-3.5 rounded-lg bg-surface-container-low border border-outline-variant/40 text-on-surface space-y-2">
+<div class="flex items-center justify-between text-[11px] text-secondary">
+<span class="font-semibold text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">auto_awesome</span>
+                    Synthesis Insight
+                  </span>
+<span class="font-data-mono">11:42 EEST</span>
+</div>
+<p class="text-body-sm font-body-sm leading-relaxed text-on-surface">
+                  Based on satellite soil moisture indices across Satakunta (2022–2024), precision drip irrigation mitigates heat-spike yield drops by <span class="font-semibold text-primary">14.2% [E1]</span>. However, regional pumping energy intensity adds <span class="font-semibold text-amber-700">3.2 tCO2e</span> unless paired with on-farm solar arrays <span class="font-semibold text-primary">[E2]</span>.
+                </p>
+</div>
+<!-- Interactive Clickable Evidence Reference Cards -->
+<div class="flex flex-col gap-2">
+<span class="text-label-sm font-label-sm font-bold uppercase text-secondary tracking-wider">Audit Evidence Vault</span>
+<!-- Evidence [E1] -->
+<div class="p-2.5 rounded-lg border border-outline-variant/40 bg-surface hover:bg-surface-container-high transition-colors cursor-pointer group">
+<div class="flex items-start gap-2">
+<span class="px-1.5 py-0.5 rounded bg-primary text-on-primary text-[10px] font-bold font-data-mono flex-shrink-0">E1</span>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="text-label-sm font-label-sm font-semibold text-on-surface truncate group-hover:text-primary transition-colors">Finnish Meteorological Institute &amp; Säkylä Soil Sensor Array Log #842</span>
+<span class="material-symbols-outlined text-xs text-secondary group-hover:text-primary">open_in_new</span>
+</div>
+<div class="flex items-center gap-2 mt-1 text-[10px] text-secondary">
+<span class="text-primary font-semibold">Confidence 98.4%</span>
+<span>·</span>
+<span>Multi-spectral Sentinel-2 calibrated</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Evidence [E2] -->
+<div class="p-2.5 rounded-lg border border-outline-variant/40 bg-surface hover:bg-surface-container-high transition-colors cursor-pointer group">
+<div class="flex items-start gap-2">
+<span class="px-1.5 py-0.5 rounded bg-tertiary text-on-tertiary text-[10px] font-bold font-data-mono flex-shrink-0">E2</span>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="text-label-sm font-label-sm font-semibold text-on-surface truncate group-hover:text-tertiary transition-colors">Apetit Energy Scope 2 Sub-station Metering Report Q3 2024</span>
+<span class="material-symbols-outlined text-xs text-secondary group-hover:text-tertiary">open_in_new</span>
+</div>
+<div class="flex items-center gap-2 mt-1 text-[10px] text-secondary">
+<span class="px-1 py-0.2 rounded bg-surface-container font-semibold text-on-surface">XBRL Tagged</span>
+<span>·</span>
+<span>Smart Meter Feed ID: #FI-SK-993</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Prompt Input Bar -->
+<div class="pt-3 border-t border-outline-variant/30">
+<div class="relative">
+<input class="w-full h-10 pl-3 pr-10 bg-surface border border-outline-variant/50 rounded-lg text-body-sm font-body-sm text-on-surface placeholder:text-secondary focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" placeholder="Ask agronomic or CSRD compliance question..." type="text"/>
+<button class="absolute right-1.5 top-1.5 w-7 h-7 rounded bg-primary text-on-primary flex items-center justify-center hover:bg-primary-container transition-colors" title="Submit Query">
+<span class="material-symbols-outlined text-sm">arrow_upward</span>
+</button>
+</div>
+<div class="flex items-center justify-between text-[10px] text-secondary mt-2 px-1">
+<span>Grounding: Satakunta &amp; Baltic Parcels</span>
+<span class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                Audit Verifiable
+              </span>
+</div>
+</div>
+</div>
+</section>
+</main>
+</div>
+</body></html>

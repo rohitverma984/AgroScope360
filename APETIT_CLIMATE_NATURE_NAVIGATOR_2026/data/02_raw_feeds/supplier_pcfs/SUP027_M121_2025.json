@@ -1,0 +1,68 @@
+{
+ "id": "36779420-b0cf-2153-3f97-8fbb247d2ebc",
+ "specVersion": "2.2.0",
+ "version": 1,
+ "created": "2026-03-02T09:00:00Z",
+ "status": "Active",
+ "companyName": "Supplier 027 (synthetic)",
+ "companyIds": [
+  "urn:pathfinder:company:customcode:buyer-assigned:SUP027"
+ ],
+ "productDescription": "Chickpea, frozen",
+ "productIds": [
+  "urn:pathfinder:product:customcode:buyer-assigned:M121"
+ ],
+ "productCategoryCpc": "21000",
+ "productNameCompany": "Chickpea, frozen",
+ "comment": "Synthetic PCF for the Since AI 2026 hackathon. Not a real supplier declaration.",
+ "pcf": {
+  "declaredUnit": "kilogram",
+  "unitaryProductAmount": "1",
+  "pCfExcludingBiogenic": "1431.4",
+  "pCfIncludingBiogenic": "1431.4",
+  "fossilGhgEmissions": "572.6",
+  "fossilCarbonContent": "0",
+  "biogenicCarbonContent": "0",
+  "dLucGhgEmissions": "0.0",
+  "landManagementGhgEmissions": "858.8",
+  "otherBiogenicGhgEmissions": "0",
+  "iLucGhgEmissions": "0",
+  "biogenicCarbonWithdrawal": "0",
+  "aircraftGhgEmissions": "0",
+  "characterizationFactors": "AR6",
+  "ipccCharacterizationFactorsSources": [
+   "AR6"
+  ],
+  "crossSectoralStandardsUsed": [
+   "GHG Protocol Product standard"
+  ],
+  "productOrSectorSpecificRules": [],
+  "boundaryProcessesDescription": "Cradle-to-gate: cultivation, inputs, drying, storage, transport to supplier warehouse.",
+  "referencePeriodStart": "2025-01-01T00:00:00Z",
+  "referencePeriodEnd": "2026-01-01T00:00:00Z",
+  "geographyCountry": "BE",
+  "secondaryEmissionFactorSources": [
+   {
+    "name": "synthetic secondary database",
+    "version": "2025"
+   }
+  ],
+  "exemptedEmissionsPercent": 2.9,
+  "exemptedEmissionsDescription": "Capital goods and overheads excluded.",
+  "packagingEmissionsIncluded": false,
+  "primaryDataShare": 56.0,
+  "dqi": {
+   "coveragePercent": 93.0,
+   "technologicalDQR": 1.4,
+   "temporalDQR": 1.8,
+   "geographicalDQR": 1.8,
+   "completenessDQR": 2.5,
+   "reliabilityDQR": 1.6
+  },
+  "assurance": {
+   "assurance": false,
+   "coverage": "product line",
+   "level": "limited"
+  }
+ }
+}

@@ -1,0 +1,49 @@
+material_id,erp_name,name_en,material_group,base_uom,default_ef_id,receiving_site,origin_countries,eudr_commodity,sbtn_high_impact_commodity
+M100,"Rypsi/rapsi siemen, kotimainen sopimus","Rapeseed/turnip rape, FI contract growers",oilseed,kg,FARM,S-KAN,FI,False,False
+M101,"Rypsi/rapsi siemen, kotimainen kauppa","Rapeseed, FI via grain traders",oilseed,kg,EF-RAP-FI,S-KAN,FI,False,False
+M102,"Rapsi siemen, tuonti EE",Rapeseed import Estonia,oilseed,kg,EF-RAP-EE,S-KAN,EE,False,False
+M103,"Rapsi siemen, tuonti LV",Rapeseed import Latvia,oilseed,kg,EF-RAP-LV,S-KAN,LV,False,False
+M104,"Rapsi siemen, tuonti LT",Rapeseed import Lithuania,oilseed,kg,EF-RAP-LT,S-KAN,LT,False,False
+M105,"Rapsi siemen, tuonti SE",Rapeseed import Sweden,oilseed,kg,EF-RAP-SE,S-KAN,SE,False,False
+M106,"Rapsi siemen, tuonti DK",Rapeseed import Denmark,oilseed,kg,EF-RAP-DK,S-KAN,DK,False,False
+M107,"Rapsi siemen, tuonti PL",Rapeseed import Poland,oilseed,kg,EF-RAP-PL,S-KAN,PL,False,False
+M110,"Herne, sopimusviljely","Vining peas, FI contract",vegetable_contract,kg,FARM,S-SAK,FI,False,False
+M111,"Peruna, sopimusviljely","Potato, FI contract",vegetable_contract,kg,FARM,S-SAK,FI,False,False
+M112,"Porkkana, sopimusviljely","Carrot, FI contract",vegetable_contract,kg,FARM,S-SAK,FI,False,False
+M113,"Pinaatti, sopimusviljely","Spinach, FI contract",vegetable_contract,kg,FARM,S-SAK,FI,False,False
+M114,"Ärt, kontraktsodling (Foodhills)","Vining peas, SE contract (Foodhills)",vegetable_contract,kg,FARM,S-BJU,SE,False,False
+M120,Maissi pakaste,"Sweetcorn, frozen",vegetable_bought,kg,EF-FROZ-CORN-HU,S-SAK,HU;SK,False,False
+M121,Kikherne pakaste,"Chickpea, frozen",vegetable_bought,kg,EF-FROZ-CHICK-BE,S-SAK,BE;CA;IT;ES,False,False
+M122,"Kukkakaali, pakaste","Cauliflower, frozen",vegetable_bought,kg,EF-FROZ-CAUL-NL,S-SAK,BE;FR;NL,False,False
+M123,Paprikakuutio Pun 10Mm Teollis. Pakaste,"Red pepper dices, frozen",vegetable_bought,kg,EF-FROZ-PAPR-ES,S-SAK,PT;ES;TR,False,False
+M124,Sipulikuutio 8Mm Esipaist Ltk 10Kg/72 pakaste,"Onion dices pre-fried, frozen",vegetable_bought,kg,EF-FROZ-ONION-BE,S-SAK,EU,False,False
+M125,Parsakaalin Kukka pakaste,"Broccoli florets, frozen",vegetable_bought,kg,EF-FROZ-BROC-EC,S-SAK,EC,False,False
+M126,"Vihannessekoitus raaka-aine, tuonti","Vegetable mix components, imported",vegetable_bought,kg,EF-FROZ-CAUL-NL,S-SAK,BE;NL;PL,False,False
+M127,"Härkäpapu, kotimainen","Faba bean, Finland",legume,kg,EF-FABA-FI,S-SAK,FI,False,False
+M130,Soija Isolaatti,Soy protein isolate,protein,kg,EF-SOYISO-CN,S-SAK,CN,False,True
+M131,Tomaattikastike (pizza),Tomato sauce (pizza),sauce,kg,EF-TOMSAUCE-ES,S-PUD,ES;PT,False,False
+M132,Maitojauhe 26 %,Milk powder 26 %,dairy,kg,EF-MILKPOW-FI,S-SAK,FI,False,True
+M133,"Juusto, pizza (mozzarella/edam)",Cheese for pizza,dairy,kg,EF-CHEESE-EU,S-PUD,FI;DE;NL,False,True
+M134,"Kinkku, kypsä, kuutio",Cooked ham dices,meat,kg,EF-HAM-EU,S-PUD,FI;DK,False,True
+M135,Vehnäjauho,Wheat flour,cereal,kg,EF-FLOUR-FI,S-PUD,FI,False,False
+M136,Auringonkukkaöljy,Sunflower oil,oil,kg,EF-VEGOIL-SUN-EU,S-PUD,HU;BG,False,False
+M137,Mausteet ja maustesekoitukset,Spices & seasonings,spice,kg,EF-SPICE-MIX,S-SAK,GLO,False,False
+M138,Sokeri,Sugar,sugar,kg,EF-SUGAR-FI,S-SAK,FI,False,False
+M140,Kala Lohimassa Blokki pakaste,"Salmon mince block, frozen",fish,kg,EF-SALMON-NO,S-SAK,NO,False,False
+M141,Kala Kultakuoremassa Pakaste Msc,"Greater argentine mince MSC, frozen",fish,kg,EF-ARGENTINE-FO,S-SAK,FO,False,False
+M142,"Särki/ahven, Pyhäjärvi hoitokalastus","Roach/perch, local lake management fishing",fish,kg,EF-LOCALFISH-FI,S-SAK,FI,False,False
+M150,PET-aihio / pullo,PET preforms / bottles,packaging,kg,EF-PET-PREF,S-KAN,EU,False,False
+M151,HDPE korkki,HDPE caps,packaging,kg,EF-HDPE-CAP,S-KAN,EU,False,False
+M152,Pakkauskalvo PE/PP,Packaging film PE/PP,packaging,kg,EF-PE-FILM,S-SAK,EU,False,False
+M153,Aaltopahvi / kartonki,Corrugated board / cartons,packaging,kg,EF-BOARD,S-SAK,FI;SE,False,False
+M154,Etiketit,Labels,packaging,kg,EF-LABEL,S-KAN,FI,False,False
+M160,Valkaisusavi,Bleaching earth,chemical,kg,EF-BLEACH-EARTH,S-KAN,EU,False,False
+M161,Heksaani,Hexane,chemical,kg,EF-HEXANE,S-KAN,EU,False,False
+M162,Prosessikemikaalit,Process chemicals,chemical,kg,EF-CHEM-MISC,S-SAK,EU,False,False
+M163,Typpikaasu,Nitrogen gas,chemical,kg,EF-N2-GAS,S-KAN,FI,False,False
+M900,"Ostopalvelut, asiantuntija",Business services,service,EUR,EF-SPEND-SERV,S-HQ,FI,False,False
+M901,Kunnossapito,Maintenance & repair,service,EUR,EF-SPEND-MAINT,S-SAK,FI,False,False
+M902,IT-palvelut,IT services,service,EUR,EF-SPEND-IT,S-HQ,FI,False,False
+M903,Markkinointi,Marketing & media,service,EUR,EF-SPEND-MKT,S-HQ,FI,False,False
+M950,"Investoinnit, koneet ja laitteet",Capex machinery & equipment,capex,EUR,EF-SPEND-CAPEX-MACH,S-SAK,FI,False,False
+M951,"Investoinnit, rakentaminen",Capex construction,capex,EUR,EF-SPEND-CAPEX-BUILD,S-SAK,FI,False,False

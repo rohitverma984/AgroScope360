@@ -1,0 +1,68 @@
+{
+ "id": "3b18dd1a-c5b5-27c7-430f-c59a9a0b948c",
+ "specVersion": "2.2.0",
+ "version": 1,
+ "created": "2025-03-20T09:00:00Z",
+ "status": "Active",
+ "companyName": "Supplier 052 (synthetic)",
+ "companyIds": [
+  "urn:pathfinder:company:customcode:buyer-assigned:SUP052"
+ ],
+ "productDescription": "Wheat flour",
+ "productIds": [
+  "urn:pathfinder:product:customcode:buyer-assigned:M135"
+ ],
+ "productCategoryCpc": "21000",
+ "productNameCompany": "Wheat flour",
+ "comment": "Synthetic PCF for the Since AI 2026 hackathon. Not a real supplier declaration.",
+ "pcf": {
+  "declaredUnit": "kilogram",
+  "unitaryProductAmount": "1",
+  "pCfExcludingBiogenic": "0.5573",
+  "pCfIncludingBiogenic": "0.5573",
+  "fossilGhgEmissions": "0.1226",
+  "fossilCarbonContent": "0",
+  "biogenicCarbonContent": "0",
+  "dLucGhgEmissions": "0.0000",
+  "landManagementGhgEmissions": "0.4347",
+  "otherBiogenicGhgEmissions": "0",
+  "iLucGhgEmissions": "0",
+  "biogenicCarbonWithdrawal": "0",
+  "aircraftGhgEmissions": "0",
+  "characterizationFactors": "AR6",
+  "ipccCharacterizationFactorsSources": [
+   "AR6"
+  ],
+  "crossSectoralStandardsUsed": [
+   "GHG Protocol Product standard"
+  ],
+  "productOrSectorSpecificRules": [],
+  "boundaryProcessesDescription": "Cradle-to-gate: cultivation, inputs, drying, storage, transport to supplier warehouse.",
+  "referencePeriodStart": "2024-01-01T00:00:00Z",
+  "referencePeriodEnd": "2025-01-01T00:00:00Z",
+  "geographyCountry": "FI",
+  "secondaryEmissionFactorSources": [
+   {
+    "name": "synthetic secondary database",
+    "version": "2025"
+   }
+  ],
+  "exemptedEmissionsPercent": 2.7,
+  "exemptedEmissionsDescription": "Capital goods and overheads excluded.",
+  "packagingEmissionsIncluded": false,
+  "primaryDataShare": 39.0,
+  "dqi": {
+   "coveragePercent": 98.0,
+   "technologicalDQR": 2.2,
+   "temporalDQR": 1.9,
+   "geographicalDQR": 2.1,
+   "completenessDQR": 1.5,
+   "reliabilityDQR": 2.0
+  },
+  "assurance": {
+   "assurance": false,
+   "coverage": "product line",
+   "level": "limited"
+  }
+ }
+}

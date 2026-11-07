@@ -1,0 +1,16 @@
+year,site_id,project,capex_type,capex_eur
+2021,S-KAN,Biosteam plant (wood chips / side streams),machinery,6500000.0
+2022,S-SAK,Heat-pump heat recovery (with energy partner),machinery,2200000.0
+2023,S-SAK,Steam boiler house (biogas / LNG backup),construction,1800000.0
+2024,S-SAK,Packing line upgrade,machinery,1500000.0
+2025,S-SAK,Automated frozen warehouse (phase 1),construction,3200000.0
+2025,S-KAN,BlackGrain powder line,machinery,2000000.0
+2025,S-SAK,Pea viner fleet renewal,machinery,2400000.0
+2025,S-SAK,Optical sorting machines,machinery,1700000.0
+2019,ALL,Maintenance capex (various),machinery,910687.8999441601
+2020,ALL,Maintenance capex (various),machinery,959704.1949550251
+2021,ALL,Maintenance capex (various),machinery,1019462.1540443411
+2022,ALL,Maintenance capex (various),machinery,1262452.6839048262
+2023,ALL,Maintenance capex (various),machinery,1012368.9570881646
+2024,ALL,Maintenance capex (various),machinery,1267198.280996708
+2025,ALL,Maintenance capex (various),machinery,1026255.6516025459

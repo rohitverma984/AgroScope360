@@ -1,0 +1,68 @@
+{
+ "id": "6e45b077-3b27-1520-54a1-005632846c02",
+ "specVersion": "2.2.0",
+ "version": 1,
+ "created": "2025-03-03T09:00:00Z",
+ "status": "Active",
+ "companyName": "Supplier 015 (synthetic)",
+ "companyIds": [
+  "urn:pathfinder:company:customcode:buyer-assigned:SUP015"
+ ],
+ "productDescription": "Rapeseed import Sweden",
+ "productIds": [
+  "urn:pathfinder:product:customcode:buyer-assigned:M105"
+ ],
+ "productCategoryCpc": "01441",
+ "productNameCompany": "Rapeseed import Sweden",
+ "comment": "Synthetic PCF for the Since AI 2026 hackathon. Not a real supplier declaration.",
+ "pcf": {
+  "declaredUnit": "kilogram",
+  "unitaryProductAmount": "1",
+  "pCfExcludingBiogenic": "1.0683",
+  "pCfIncludingBiogenic": "1.0683",
+  "fossilGhgEmissions": "0.1709",
+  "fossilCarbonContent": "0",
+  "biogenicCarbonContent": "0.18",
+  "dLucGhgEmissions": "0.0000",
+  "landManagementGhgEmissions": "0.8974",
+  "otherBiogenicGhgEmissions": "0",
+  "iLucGhgEmissions": "0",
+  "biogenicCarbonWithdrawal": "0",
+  "aircraftGhgEmissions": "0",
+  "characterizationFactors": "AR6",
+  "ipccCharacterizationFactorsSources": [
+   "AR6"
+  ],
+  "crossSectoralStandardsUsed": [
+   "GHG Protocol Product standard"
+  ],
+  "productOrSectorSpecificRules": [],
+  "boundaryProcessesDescription": "Cradle-to-gate: cultivation, inputs, drying, storage, transport to supplier warehouse.",
+  "referencePeriodStart": "2024-01-01T00:00:00Z",
+  "referencePeriodEnd": "2025-01-01T00:00:00Z",
+  "geographyCountry": "SE",
+  "secondaryEmissionFactorSources": [
+   {
+    "name": "synthetic secondary database",
+    "version": "2025"
+   }
+  ],
+  "exemptedEmissionsPercent": 1.3,
+  "exemptedEmissionsDescription": "Capital goods and overheads excluded.",
+  "packagingEmissionsIncluded": false,
+  "primaryDataShare": 23.0,
+  "dqi": {
+   "coveragePercent": 87.0,
+   "technologicalDQR": 1.5,
+   "temporalDQR": 1.9,
+   "geographicalDQR": 1.2,
+   "completenessDQR": 2.4,
+   "reliabilityDQR": 2.2
+  },
+  "assurance": {
+   "assurance": false,
+   "coverage": "product line",
+   "level": "limited"
+  }
+ }
+}

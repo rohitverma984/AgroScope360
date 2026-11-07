@@ -1,0 +1,68 @@
+{
+ "id": "403fa796-eff3-259a-42f8-7b52e8110c25",
+ "specVersion": "2.2.0",
+ "version": 1,
+ "created": "2025-03-02T09:00:00Z",
+ "status": "Active",
+ "companyName": "Supplier 064 (synthetic)",
+ "companyIds": [
+  "urn:pathfinder:company:customcode:buyer-assigned:SUP064"
+ ],
+ "productDescription": "Roach/perch, local lake management fishing",
+ "productIds": [
+  "urn:pathfinder:product:customcode:buyer-assigned:M142"
+ ],
+ "productCategoryCpc": "21000",
+ "productNameCompany": "Roach/perch, local lake management fishing",
+ "comment": "Synthetic PCF for the Since AI 2026 hackathon. Not a real supplier declaration.",
+ "pcf": {
+  "declaredUnit": "kilogram",
+  "unitaryProductAmount": "1",
+  "pCfExcludingBiogenic": "0.7559",
+  "pCfIncludingBiogenic": "0.7559",
+  "fossilGhgEmissions": "0.7559",
+  "fossilCarbonContent": "0",
+  "biogenicCarbonContent": "0",
+  "dLucGhgEmissions": "0.0000",
+  "landManagementGhgEmissions": "0.0000",
+  "otherBiogenicGhgEmissions": "0",
+  "iLucGhgEmissions": "0",
+  "biogenicCarbonWithdrawal": "0",
+  "aircraftGhgEmissions": "0",
+  "characterizationFactors": "AR6",
+  "ipccCharacterizationFactorsSources": [
+   "AR6"
+  ],
+  "crossSectoralStandardsUsed": [
+   "GHG Protocol Product standard"
+  ],
+  "productOrSectorSpecificRules": [],
+  "boundaryProcessesDescription": "Cradle-to-gate: cultivation, inputs, drying, storage, transport to supplier warehouse.",
+  "referencePeriodStart": "2024-01-01T00:00:00Z",
+  "referencePeriodEnd": "2025-01-01T00:00:00Z",
+  "geographyCountry": "FI",
+  "secondaryEmissionFactorSources": [
+   {
+    "name": "synthetic secondary database",
+    "version": "2025"
+   }
+  ],
+  "exemptedEmissionsPercent": 2.5,
+  "exemptedEmissionsDescription": "Capital goods and overheads excluded.",
+  "packagingEmissionsIncluded": false,
+  "primaryDataShare": 27.0,
+  "dqi": {
+   "coveragePercent": 75.0,
+   "technologicalDQR": 1.4,
+   "temporalDQR": 1.0,
+   "geographicalDQR": 1.1,
+   "completenessDQR": 2.7,
+   "reliabilityDQR": 1.7
+  },
+  "assurance": {
+   "assurance": false,
+   "coverage": "product line",
+   "level": "limited"
+  }
+ }
+}

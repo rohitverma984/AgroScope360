@@ -1,0 +1,37 @@
+source,url,licence,used_for
+SBTi Corporate Net-Zero Standard V2.0,https://files.sciencebasedtargets.org/production/files/Corporate-Net-Zero-Standard-version-2.pdf,free to download; copyrighted,target rules
+SBTi CNZS V1.3.1 Method Appendix,https://files.sciencebasedtargets.org/production/files/CNZS-V1.3.1-Method-Appendix.pdf,free to download; copyrighted,reduction rates
+SBTi FLAG,https://sciencebasedtargets.org/sector-development/forest-land-and-agriculture/,free to download; copyrighted,FLAG requirements
+GHG Protocol Land Sector and Removals Standard,https://ghgprotocol.org/land-sector-and-removals-standard,free to download; copyrighted,land accounting
+GHG Protocol Scope 2 status,https://ghgprotocol.org/blog/scope-2-market-based-method-update-2025-2026-public-consultation-current-status,web page,scope 2
+SBTN Step 1a materiality screening,https://sciencebasedtargetsnetwork.org/companies/take-action/assess/materiality-screening,free to download,nature screening
+SBTN Step 2 technical guidance v1.1,https://sciencebasedtargetsnetwork.org/wp-content/uploads/2024/07/Technical-Guidance-2024-Step2-Prioritize-v1-1.pdf,free to download,prioritisation
+SBTN state of nature water layers v2,https://zenodo.org/records/7797979/latest,CC BY 4.0,water state of nature
+EFRAG simplified ESRS E3 (Delegated Act),https://knowledgehub.efrag.org/eng/interactive/simplified-esrs/esrs-e3/delegated-act,web page,water metrics
+EFRAG simplified ESRS E1,https://knowledgehub.efrag.org/interactive/simplified-esrs/esrs-e1,web page,climate metrics
+NGFS scenarios portal,https://www.ngfs.net/ngfs-scenarios-portal/,NGFS data licence (check before commercial use),transition scenarios
+WRI Aqueduct 4.0,https://github.com/wri/Aqueduct40,CC BY 4.0,water stress
+FMI open data,https://en.ilmatieteenlaitos.fi/open-data-licence,CC BY 4.0,weather observations
+Finland regional climate scenarios (Paituli CSV),https://climateguide.fi/articles/finlands-regional-climate-change-scenarios,check Paituli terms; Climate Guide website content is non-commercial,projections
+Ruosteenoja & Jylhä 2021 (Geophysica),https://www.geophysica.fi/pdf/geophysica_2021_56_1_039_ruosteenoja.pdf,journal article,CMIP6 deltas
+SYKE catchment division (valuma-aluejako),https://ckanfeo.ymparisto.fi/dataset/valuma-aluejako,CC BY 4.0,catchments
+SYKE Corine land cover 2018,https://ckan.ymparisto.fi/en/dataset/corine-maanpeite-2018,CC BY 4.0,land cover
+Luke statistics (crop production),https://statdb.luke.fi/PxWeb/sq/f93bcf99-f22e-4b9e-b871-cd30e3de18e7?lang=en,CC BY 4.0,yield calibration
+Finnish Food Authority field parcels,https://geoportal.ymparisto.fi/meta/julkinen/dokumentit/Metatietokuvaus_peltolohkorekisteri.pdf,CC BY 4.0 (verify),parcel geometries
+Copernicus ERA5 / CDS,https://forum.ecmwf.int/t/cc-by-licence-to-replace-licence-to-use-copernicus-products-on-02-july-2025/13464,CC BY (from 2 Jul 2025),reanalysis weather
+FAOSTAT,https://www.fao.org/contact-us/terms/db-terms-of-use,CC BY 4.0 + FAO terms,country statistics
+EXIOBASE 3.10.1,https://zenodo.org/records/18937492,non-commercial; commercial licence needed,spend-based EFs (NOT redistributed)
+Agribalyse,https://doc.agribalyse.fr/documentation-en/agribalyse-data/terms-of-use-and-environmental-communication,Etalab Open Licence 2.0 (ecoinvent background separate),food LCA factors
+NHM Biodiversity Intactness Index,https://data.nhm.ac.uk/dataset/bii-developed-by-nhm-v2-1-1-limited-release,CC BY-NC-SA 4.0 (non-commercial),biodiversity state (NOT redistributed)
+GFW / UMD tree cover loss,https://data-api.globalforestwatch.org/dataset/umd_tree_cover_loss,CC BY 4.0,deforestation risk
+IBAT / KBA,https://www.keybiodiversityareas.org/terms-service,restricted; written permission for commercial use,sensitive sites (NOT redistributed)
+Fingrid dataset 266 (CO2 of electricity production),https://data.fingrid.fi/en/datasets/266,CC BY 4.0,grid factor
+AIB European residual mix 2024,https://www.aib-net.org/sites/default/files/assets/facts/residual-mix/2024/2024_Final%20_Residual%20mix%20calculation%20results_30052025.pdf,free to download,residual mix
+"Statistics Finland open data (fuel classification, electricity EFs)",https://stat.fi/org/avoindata/index_en.html,CC BY 4.0,fuel EFs
+Yara carbon footprint verification statement,https://pre.yara.co.uk/contentassets/a6e77004605040aea339577f909d5368/yara-carbon-footprint_verification_statement.pdf,free to download,fertiliser EF
+SYKE organic-soil emission factors (Kokemäenjoki dataset),https://ckan.ymparisto.fi/dataset/greenhouse-gas-net-emissions-for-agricultural-areas-in-kokemaenjoki-river-basin-calculated-for-,CC BY 4.0,organic soil CO2
+"Pyhäjärvi phosphorus load (Ventelä, ESPC3)",https://www.phosphorusplatform.eu/images/Conference/ESPC3/Outcomes/ESPC3-Ventela-Pyhajarvi-instituutti.pdf,presentation,lake catchment calibration
+Apetit Annual Report 2024,https://apetit.fi/app/uploads/Apetit_Annual_Report_2024.pdf,company report,"published inventory, context"
+Apetit ESEF 2025 filing,https://filings.xbrl.org/743700RSFZUIQYABYT14/2025-12-31/ESEF/FI/0/743700RSFZUIQYABYT14-2025-12-31-1-en/reports/743700RSFZUIQYABYT14-2025-12-31-1-en.html,company filing,"structure, sites, Foodhills"
+EUDR amendment (EU) 2025/2650 overview,https://environment.ec.europa.eu/news/commission-updates-product-scope-and-tools-support-eudr-2026-07-13_en,EU,EUDR scope
+PACT Technical Specifications,https://wbcsd.github.io/tr/2023/data-exchange-protocol-20231207/,"WBCSD, open specification",supplier PCF format

@@ -1,0 +1,13 @@
+date,event,type,relevance,source
+2017-06-29,"Seafood business divested (Apetit Kala, Maritim)",divestment,"pre-base-year, out of scope",public
+2022-03-10,Baltic grain trade sold (Estonia completed),divestment,base-year recalculation (scope 3 cat 1),public
+2022-05-31,Finnish grain trade sold; Avena Nordic Grain renamed Apetit Kasviöljy Oy,divestment,base-year recalculation (scope 3 cat 1),public
+2021-07-01,"Kantvik biosteam plant (wood chips, side streams) in operation",operational,scope 2 -> scope 1 (biogenic),public
+2023-07-01,"Säkylä energy solution (heat recovery, biogas boilers, LNG back-up)",operational,scope 2 -> scope 1; LPG used as back-up in 2023-2024,public
+2025-11-27,"Foodhills AB (Bjuv, Sweden; frozen peas) acquired",acquisition,base-year recalculation; ~300 SE pea growers enter scope 3 FLAG,public
+2025-12-01,Commitment to set SBTi near-term targets,target_setting,targets due within 24 months,public
+2026-04-13,Pudasjärvi pizza plant closure decided; production to contract manufacturing,divestment_operational,"scope 1/2 fall, cat 1 rises (contract-manufactured pizza)",public
+2026-06-30,Sale of Kantvik biosteam plant to an energy company announced (closing early 2027) with long-term steam supply,operational,scope 1 biogenic -> scope 2 purchased steam,public
+2026-12-30,EU Deforestation Regulation applies to large/medium operators,regulation,scope set by HS codes in Annex I; soy protein isolate (HS 3504) is not listed - verify per product,public
+2027-01-01,GHG Protocol Land Sector & Removals Standard effective,standard,land management & LUC accounting for FLAG,public
+2027-02-01,SBTi Corporate Net-Zero Standard V2 effective (V1.3.1 usable until end-2027),standard,target-setting rules,public

@@ -1,0 +1,6 @@
+site_id,name,country,lat,lon,activity,in_group_from,in_group_to
+S-SAK,Säkylä plant,FI,61.078744,22.253773,"frozen vegetables, frozen foods, ready meals",1990,
+S-KAN,Kantvik oilseed mill,FI,60.084,24.383,"rapeseed crushing, oil refining & bottling, expeller",1990,
+S-PUD,Pudasjärvi plant,FI,65.36,26.99,frozen pizza,1990,2026.0
+S-BJU,Bjuv plant (Foodhills),SE,56.084,12.92,frozen peas,2025,
+S-HQ,Helsinki head office,FI,60.185,24.962,office,1990,

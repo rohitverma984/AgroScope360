@@ -1,0 +1,68 @@
+{
+ "id": "24e19d3b-5581-13c8-1eed-1b3382541b54",
+ "specVersion": "2.2.0",
+ "version": 1,
+ "created": "2025-03-16T09:00:00Z",
+ "status": "Active",
+ "companyName": "Supplier 002 (synthetic)",
+ "companyIds": [
+  "urn:pathfinder:company:customcode:buyer-assigned:SUP002"
+ ],
+ "productDescription": "Rapeseed, FI via grain traders",
+ "productIds": [
+  "urn:pathfinder:product:customcode:buyer-assigned:M101"
+ ],
+ "productCategoryCpc": "01441",
+ "productNameCompany": "Rapeseed, FI via grain traders",
+ "comment": "Synthetic PCF for the Since AI 2026 hackathon. Not a real supplier declaration.",
+ "pcf": {
+  "declaredUnit": "kilogram",
+  "unitaryProductAmount": "1",
+  "pCfExcludingBiogenic": "1.2981",
+  "pCfIncludingBiogenic": "1.2981",
+  "fossilGhgEmissions": "0.1817",
+  "fossilCarbonContent": "0",
+  "biogenicCarbonContent": "0.18",
+  "dLucGhgEmissions": "0.0000",
+  "landManagementGhgEmissions": "1.1164",
+  "otherBiogenicGhgEmissions": "0",
+  "iLucGhgEmissions": "0",
+  "biogenicCarbonWithdrawal": "0",
+  "aircraftGhgEmissions": "0",
+  "characterizationFactors": "AR6",
+  "ipccCharacterizationFactorsSources": [
+   "AR6"
+  ],
+  "crossSectoralStandardsUsed": [
+   "GHG Protocol Product standard"
+  ],
+  "productOrSectorSpecificRules": [],
+  "boundaryProcessesDescription": "Cradle-to-gate: cultivation, inputs, drying, storage, transport to supplier warehouse.",
+  "referencePeriodStart": "2024-01-01T00:00:00Z",
+  "referencePeriodEnd": "2025-01-01T00:00:00Z",
+  "geographyCountry": "FI",
+  "secondaryEmissionFactorSources": [
+   {
+    "name": "synthetic secondary database",
+    "version": "2025"
+   }
+  ],
+  "exemptedEmissionsPercent": 0.5,
+  "exemptedEmissionsDescription": "Capital goods and overheads excluded.",
+  "packagingEmissionsIncluded": false,
+  "primaryDataShare": 50.0,
+  "dqi": {
+   "coveragePercent": 84.0,
+   "technologicalDQR": 1.7,
+   "temporalDQR": 1.4,
+   "geographicalDQR": 1.0,
+   "completenessDQR": 1.4,
+   "reliabilityDQR": 1.8
+  },
+  "assurance": {
+   "assurance": false,
+   "coverage": "product line",
+   "level": "limited"
+  }
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "id": "0adee7a1-3834-54c0-398f-d2a5e6c9d10e",
+ "specVersion": "2.2.0",
+ "version": 1,
+ "created": "2026-03-16T09:00:00Z",
+ "status": "Active",
+ "companyName": "Supplier 063 (synthetic)",
+ "companyIds": [
+  "urn:pathfinder:company:customcode:buyer-assigned:SUP063"
+ ],
+ "productDescription": "Greater argentine mince MSC, frozen",
+ "productIds": [
+  "urn:pathfinder:product:customcode:buyer-assigned:M141"
+ ],
+ "productCategoryCpc": "21000",
+ "productNameCompany": "Greater argentine mince MSC, frozen",
+ "comment": "Synthetic PCF for the Since AI 2026 hackathon. Not a real supplier declaration.",
+ "pcf": {
+  "declaredUnit": "kilogram",
+  "unitaryProductAmount": "1",
+  "pCfExcludingBiogenic": "3.5734",
+  "pCfIncludingBiogenic": "3.5734",
+  "fossilGhgEmissions": "3.5734",
+  "fossilCarbonContent": "0",
+  "biogenicCarbonContent": "0",
+  "dLucGhgEmissions": "0.0000",
+  "landManagementGhgEmissions": "0.0000",
+  "otherBiogenicGhgEmissions": "0",
+  "iLucGhgEmissions": "0",
+  "biogenicCarbonWithdrawal": "0",
+  "aircraftGhgEmissions": "0",
+  "characterizationFactors": "AR6",
+  "ipccCharacterizationFactorsSources": [
+   "AR6"
+  ],
+  "crossSectoralStandardsUsed": [
+   "GHG Protocol Product standard"
+  ],
+  "productOrSectorSpecificRules": [],
+  "boundaryProcessesDescription": "Cradle-to-gate: cultivation, inputs, drying, storage, transport to supplier warehouse.",
+  "referencePeriodStart": "2025-01-01T00:00:00Z",
+  "referencePeriodEnd": "2026-01-01T00:00:00Z",
+  "geographyCountry": "FO",
+  "secondaryEmissionFactorSources": [
+   {
+    "name": "synthetic secondary database",
+    "version": "2025"
+   }
+  ],
+  "exemptedEmissionsPercent": 0.9,
+  "exemptedEmissionsDescription": "Capital goods and overheads excluded.",
+  "packagingEmissionsIncluded": false,
+  "primaryDataShare": 79.0,
+  "dqi": {
+   "coveragePercent": 76.0,
+   "technologicalDQR": 2.5,
+   "temporalDQR": 2.1,
+   "geographicalDQR": 2.5,
+   "completenessDQR": 2.2,
+   "reliabilityDQR": 1.4
+  },
+  "assurance": {
+   "assurance": false,
+   "coverage": "product line",
+   "level": "limited"
+  }
+ }
+}

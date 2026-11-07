@@ -1,0 +1,68 @@
+{
+ "id": "041d3970-821d-73db-2c27-4ba46b19d1e2",
+ "specVersion": "2.2.0",
+ "version": 1,
+ "created": "2025-03-07T09:00:00Z",
+ "status": "Active",
+ "companyName": "Supplier 031 (synthetic)",
+ "companyIds": [
+  "urn:pathfinder:company:customcode:buyer-assigned:SUP031"
+ ],
+ "productDescription": "Red pepper dices, frozen",
+ "productIds": [
+  "urn:pathfinder:product:customcode:buyer-assigned:M123"
+ ],
+ "productCategoryCpc": "21000",
+ "productNameCompany": "Red pepper dices, frozen",
+ "comment": "Synthetic PCF for the Since AI 2026 hackathon. Not a real supplier declaration.",
+ "pcf": {
+  "declaredUnit": "kilogram",
+  "unitaryProductAmount": "1",
+  "pCfExcludingBiogenic": "1.3132",
+  "pCfIncludingBiogenic": "1.3132",
+  "fossilGhgEmissions": "0.5909",
+  "fossilCarbonContent": "0",
+  "biogenicCarbonContent": "0",
+  "dLucGhgEmissions": "0.0000",
+  "landManagementGhgEmissions": "0.7223",
+  "otherBiogenicGhgEmissions": "0",
+  "iLucGhgEmissions": "0",
+  "biogenicCarbonWithdrawal": "0",
+  "aircraftGhgEmissions": "0",
+  "characterizationFactors": "AR6",
+  "ipccCharacterizationFactorsSources": [
+   "AR6"
+  ],
+  "crossSectoralStandardsUsed": [
+   "GHG Protocol Product standard"
+  ],
+  "productOrSectorSpecificRules": [],
+  "boundaryProcessesDescription": "Cradle-to-gate: cultivation, inputs, drying, storage, transport to supplier warehouse.",
+  "referencePeriodStart": "2024-01-01T00:00:00Z",
+  "referencePeriodEnd": "2025-01-01T00:00:00Z",
+  "geographyCountry": "PT",
+  "secondaryEmissionFactorSources": [
+   {
+    "name": "synthetic secondary database",
+    "version": "2025"
+   }
+  ],
+  "exemptedEmissionsPercent": 3.0,
+  "exemptedEmissionsDescription": "Capital goods and overheads excluded.",
+  "packagingEmissionsIncluded": false,
+  "primaryDataShare": 29.0,
+  "dqi": {
+   "coveragePercent": 89.0,
+   "technologicalDQR": 2.1,
+   "temporalDQR": 1.6,
+   "geographicalDQR": 1.6,
+   "completenessDQR": 2.0,
+   "reliabilityDQR": 1.8
+  },
+  "assurance": {
+   "assurance": true,
+   "coverage": "product line",
+   "level": "limited"
+  }
+ }
+}

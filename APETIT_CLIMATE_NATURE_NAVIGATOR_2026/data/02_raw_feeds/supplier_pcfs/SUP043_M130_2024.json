@@ -1,0 +1,68 @@
+{
+ "id": "2a955b58-3599-4ace-204d-fa829fb49cd9",
+ "specVersion": "2.2.0",
+ "version": 1,
+ "created": "2025-03-11T09:00:00Z",
+ "status": "Active",
+ "companyName": "Supplier 043 (synthetic)",
+ "companyIds": [
+  "urn:pathfinder:company:customcode:buyer-assigned:SUP043"
+ ],
+ "productDescription": "Soy protein isolate",
+ "productIds": [
+  "urn:pathfinder:product:customcode:buyer-assigned:M130"
+ ],
+ "productCategoryCpc": "21000",
+ "productNameCompany": "Soy protein isolate",
+ "comment": "Synthetic PCF for the Since AI 2026 hackathon. Not a real supplier declaration.",
+ "pcf": {
+  "declaredUnit": "kilogram",
+  "unitaryProductAmount": "1",
+  "pCfExcludingBiogenic": "4.5499",
+  "pCfIncludingBiogenic": "4.5499",
+  "fossilGhgEmissions": "1.3650",
+  "fossilCarbonContent": "0",
+  "biogenicCarbonContent": "0",
+  "dLucGhgEmissions": "0.0000",
+  "landManagementGhgEmissions": "3.1849",
+  "otherBiogenicGhgEmissions": "0",
+  "iLucGhgEmissions": "0",
+  "biogenicCarbonWithdrawal": "0",
+  "aircraftGhgEmissions": "0",
+  "characterizationFactors": "AR6",
+  "ipccCharacterizationFactorsSources": [
+   "AR6"
+  ],
+  "crossSectoralStandardsUsed": [
+   "GHG Protocol Product standard"
+  ],
+  "productOrSectorSpecificRules": [],
+  "boundaryProcessesDescription": "Cradle-to-gate: cultivation, inputs, drying, storage, transport to supplier warehouse.",
+  "referencePeriodStart": "2024-01-01T00:00:00Z",
+  "referencePeriodEnd": "2025-01-01T00:00:00Z",
+  "geographyCountry": "CN",
+  "secondaryEmissionFactorSources": [
+   {
+    "name": "synthetic secondary database",
+    "version": "2025"
+   }
+  ],
+  "exemptedEmissionsPercent": 1.3,
+  "exemptedEmissionsDescription": "Capital goods and overheads excluded.",
+  "packagingEmissionsIncluded": false,
+  "primaryDataShare": 34.0,
+  "dqi": {
+   "coveragePercent": 75.0,
+   "technologicalDQR": 1.6,
+   "temporalDQR": 2.1,
+   "geographicalDQR": 1.3,
+   "completenessDQR": 1.9,
+   "reliabilityDQR": 2.3
+  },
+  "assurance": {
+   "assurance": false,
+   "coverage": "product line",
+   "level": "limited"
+  }
+ }
+}

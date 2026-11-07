@@ -1,0 +1,68 @@
+{
+ "id": "1f631613-847d-74e9-10a8-718ad5c2bbe9",
+ "specVersion": "2.2.0",
+ "version": 1,
+ "created": "2026-03-17T09:00:00Z",
+ "status": "Active",
+ "companyName": "Supplier 040 (synthetic)",
+ "companyIds": [
+  "urn:pathfinder:company:customcode:buyer-assigned:SUP040"
+ ],
+ "productDescription": "Faba bean, Finland",
+ "productIds": [
+  "urn:pathfinder:product:customcode:buyer-assigned:M127"
+ ],
+ "productCategoryCpc": "21000",
+ "productNameCompany": "Faba bean, Finland",
+ "comment": "Synthetic PCF for the Since AI 2026 hackathon. Not a real supplier declaration.",
+ "pcf": {
+  "declaredUnit": "kilogram",
+  "unitaryProductAmount": "1",
+  "pCfExcludingBiogenic": "0.3387",
+  "pCfIncludingBiogenic": "0.3387",
+  "fossilGhgEmissions": "0.0677",
+  "fossilCarbonContent": "0",
+  "biogenicCarbonContent": "0",
+  "dLucGhgEmissions": "0.0000",
+  "landManagementGhgEmissions": "0.2710",
+  "otherBiogenicGhgEmissions": "0",
+  "iLucGhgEmissions": "0",
+  "biogenicCarbonWithdrawal": "0",
+  "aircraftGhgEmissions": "0",
+  "characterizationFactors": "AR6",
+  "ipccCharacterizationFactorsSources": [
+   "AR6"
+  ],
+  "crossSectoralStandardsUsed": [
+   "GHG Protocol Product standard"
+  ],
+  "productOrSectorSpecificRules": [],
+  "boundaryProcessesDescription": "Cradle-to-gate: cultivation, inputs, drying, storage, transport to supplier warehouse.",
+  "referencePeriodStart": "2022-01-01T00:00:00Z",
+  "referencePeriodEnd": "2023-01-01T00:00:00Z",
+  "geographyCountry": "FI",
+  "secondaryEmissionFactorSources": [
+   {
+    "name": "synthetic secondary database",
+    "version": "2025"
+   }
+  ],
+  "exemptedEmissionsPercent": 1.8,
+  "exemptedEmissionsDescription": "Capital goods and overheads excluded.",
+  "packagingEmissionsIncluded": false,
+  "primaryDataShare": 73.0,
+  "dqi": {
+   "coveragePercent": 94.0,
+   "technologicalDQR": 2.6,
+   "temporalDQR": 1.6,
+   "geographicalDQR": 1.4,
+   "completenessDQR": 1.5,
+   "reliabilityDQR": 1.6
+  },
+  "assurance": {
+   "assurance": false,
+   "coverage": "product line",
+   "level": "limited"
+  }
+ }
+}

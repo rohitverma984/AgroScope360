@@ -1,0 +1,14 @@
+site_id,year,supplier,t_per_mwh
+S-SAK,2019,Heat supplier SAK,0.33
+S-SAK,2020,Heat supplier SAK,0.33
+S-SAK,2021,Heat supplier SAK,0.33
+S-SAK,2022,Heat supplier SAK,0.33
+S-SAK,2023,Heat supplier SAK,0.33
+S-KAN,2019,Heat supplier KAN,0.22
+S-KAN,2020,Heat supplier KAN,0.22
+S-KAN,2021,Heat supplier KAN,0.22
+S-PUD,2019,Heat supplier PUD,0.1
+S-PUD,2020,Heat supplier PUD,0.1
+S-PUD,2021,Heat supplier PUD,0.1
+S-PUD,2022,Heat supplier PUD,0.1
+S-PUD,2023,Heat supplier PUD,0.1

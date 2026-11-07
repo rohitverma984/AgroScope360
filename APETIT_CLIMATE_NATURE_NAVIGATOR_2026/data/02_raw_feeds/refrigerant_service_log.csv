@@ -1,0 +1,85 @@
+site_id,system,refrigerant,year,service_date,reason,event_id,kg_added
+S-SAK,Main freezing plant,R717_ammonia,2019,2019-05-20,leak repair,RS00001,55.35
+S-SAK,Main freezing plant,R717_ammonia,2019,2019-10-12,seal failure,RS00002,94.75
+S-SAK,Main freezing plant,R717_ammonia,2019,2019-10-14,compressor service,RS00003,1.18
+S-SAK,Cold store 2 (legacy),R404A,2019,2019-11-21,compressor service,RS00004,83.81
+S-SAK,Spiral freezer aux.,R449A,2019,2019-08-19,leak repair,RS00005,8.31
+S-SAK,Spiral freezer aux.,R449A,2019,2019-11-12,compressor service,RS00006,1.56
+S-PUD,Pizza line freezer,R449A,2019,2019-03-24,compressor service,RS00007,27.43
+S-PUD,Pizza line freezer,R449A,2019,2019-05-02,compressor service,RS00008,6900.0
+S-PUD,Pizza line freezer,R717_ammonia,2019,2019-05-16,seal failure,RS00009,22.18
+S-KAN,Process chillers,R134a,2019,2019-08-07,routine top-up,RS00010,3.31
+S-KAN,Process chillers,R134a,2019,2019-05-13,leak repair,RS00011,2.59
+S-KAN,Process chillers,R134a,2019,2019-01-10,routine top-up,RS00012,0.27
+S-HQ,Office AC,R410A,2019,2019-07-01,routine top-up,RS00013,0.39
+S-HQ,Office AC,R410A,2019,2019-03-21,seal failure,RS00014,0.87
+S-HQ,Office AC,R410A,2019,2019-08-16,leak repair,RS00015,0.23
+S-SAK,Main freezing plant,R717_ammonia,2020,2020-03-26,seal failure,RS00016,40.81
+S-SAK,Main freezing plant,R717_ammonia,2020,2020-02-15,routine top-up,RS00017,72.78
+S-SAK,Cold store 2 (legacy),R404A,2020,2020-02-05,seal failure,RS00018,11.8
+S-SAK,Cold store 2 (legacy),R717_ammonia,2020,2020-05-04,routine top-up,RS00019,84.14
+S-SAK,Spiral freezer aux.,R449A,2020,2020-06-03,routine top-up,RS00020,16.44
+S-PUD,Pizza line freezer,R449A,2020,2020-08-21,compressor service,RS00021,54.73
+S-KAN,Process chillers,R134a,2020,2020-12-13,leak repair,RS00022,6.91
+S-KAN,Process chillers,R134a,2020,2020-10-19,routine top-up,RS00023,0.94
+S-KAN,Process chillers,R134a,2020,2020-06-09,leak repair,RS00024,530.0
+S-HQ,Office AC,R410A,2020,2020-09-15,compressor service,RS00025,0.39
+S-HQ,Office AC,R410A,2020,2020-10-07,leak repair,RS00026,1.34
+S-SAK,Main freezing plant,R717_ammonia,2021,2021-04-06,compressor service,RS00027,141.32
+S-SAK,Main freezing plant,R717_ammonia,2021,2021-05-13,compressor service,RS00028,30.55
+S-SAK,Cold store 2 (legacy),R404A,2021,2021-11-08,compressor service,RS00029,80.38
+S-SAK,Cold store 2 (legacy),R717_ammonia,2021,2021-09-17,leak repair,RS00030,3.23
+S-SAK,Cold store 2 (legacy),R404A,2021,2021-12-26,seal failure,RS00031,6750.0
+S-SAK,Spiral freezer aux.,R449A,2021,2021-06-25,routine top-up,RS00032,15.29
+S-PUD,Pizza line freezer,R449A,2021,2021-06-01,leak repair,RS00033,45.62
+S-KAN,Process chillers,R134a,2021,2021-04-14,routine top-up,RS00034,7.22
+S-KAN,Process chillers,R134a,2021,2021-01-03,leak repair,RS00035,0.35
+S-HQ,Office AC,R410A,2021,2021-06-10,routine top-up,RS00036,1.91
+S-SAK,Main freezing plant,R717_ammonia,2022,2022-11-07,compressor service,RS00037,28.38
+S-SAK,Main freezing plant,R717_ammonia,2022,2022-09-15,leak repair,RS00038,94.18
+S-SAK,Main freezing plant,R717_ammonia,2022,2022-02-07,leak repair,RS00039,35.2
+S-SAK,Cold store 2 (legacy),R404A,2022,2022-12-08,seal failure,RS00040,78.92
+S-SAK,Cold store 2 (legacy),R404A,2022,2022-05-22,compressor service,RS00041,4690.0
+S-SAK,Spiral freezer aux.,R717_ammonia,2022,2022-01-24,compressor service,RS00042,20.26
+S-PUD,Pizza line freezer,R449A,2022,2022-07-09,leak repair,RS00043,64.55
+S-PUD,Pizza line freezer,R449A,2022,2022-01-18,routine top-up,RS00044,7.83
+S-KAN,Process chillers,R134a,2022,2022-12-01,routine top-up,RS00045,3.15
+S-KAN,Process chillers,R134a,2022,2022-09-21,seal failure,RS00046,5.17
+S-HQ,Office AC,R410A,2022,2022-07-19,seal failure,RS00047,0.12
+S-HQ,Office AC,R410A,2022,2022-11-05,leak repair,RS00048,0.61
+S-HQ,Office AC,R410A,2022,2022-08-02,seal failure,RS00049,0.83
+S-SAK,Main freezing plant,R717_ammonia,2023,2023-11-11,routine top-up,RS00050,1091.15
+S-SAK,Cold store 2 (legacy),R404A,2023,2023-04-27,seal failure,RS00051,11.47
+S-SAK,Cold store 2 (legacy),R717_ammonia,2023,2023-05-01,seal failure,RS00052,121.8
+S-SAK,Spiral freezer aux.,R449A,2023,2023-03-25,routine top-up,RS00053,23.68
+S-SAK,Spiral freezer aux.,R449A,2023,2023-11-01,seal failure,RS00054,1.14
+S-SAK,Spiral freezer aux.,R449A,2023,2023-07-07,routine top-up,RS00055,0.45
+S-PUD,Pizza line freezer,R449A,2023,2023-07-16,routine top-up,RS00056,88.93
+S-KAN,Process chillers,R134a,2023,2023-05-11,leak repair,RS00057,4.71
+S-KAN,Process chillers,R134a,2023,2023-08-20,routine top-up,RS00058,2.94
+S-KAN,Process chillers,R134a,2023,2023-09-17,routine top-up,RS00059,2200.0
+S-HQ,Office AC,R410A,2023,2023-12-07,compressor service,RS00060,2.8
+S-HQ,Office AC,R410A,2023,2023-05-20,leak repair,RS00061,0.27
+S-SAK,Main freezing plant,R717_ammonia,2024,2024-07-07,seal failure,RS00062,236.42
+S-SAK,Cold store 2 (legacy),R717_ammonia,2024,2024-05-08,compressor service,RS00063,153.69
+S-SAK,Cold store 2 (legacy),R404A,2024,2024-09-12,leak repair,RS00064,27750.0
+S-SAK,Spiral freezer aux.,R449A,2024,2024-06-22,routine top-up,RS00065,27.65
+S-SAK,Spiral freezer aux.,R449A,2024,2024-07-27,seal failure,RS00066,0.0
+S-PUD,Pizza line freezer,R449A,2024,2024-06-12,routine top-up,RS00067,20.54
+S-PUD,Pizza line freezer,R449A,2024,2024-03-12,routine top-up,RS00068,68.44
+S-PUD,Pizza line freezer,R449A,2024,2024-07-18,leak repair,RS00069,16.88
+S-KAN,Process chillers,R134a,2024,2024-03-13,seal failure,RS00070,15.72
+S-KAN,Process chillers,R134a,2024,2024-02-10,leak repair,RS00071,0.27
+S-HQ,Office AC,R410A,2024,2024-10-17,leak repair,RS00072,2.97
+S-HQ,Office AC,R410A,2024,2024-02-20,leak repair,RS00073,1.65
+S-SAK,Main freezing plant,R717_ammonia,2025,2025-08-18,seal failure,RS00074,53.93
+S-SAK,Main freezing plant,R717_ammonia,2025,2025-02-08,compressor service,RS00075,203.29
+S-SAK,Cold store 2 (legacy),R404A,2025,2025-09-21,compressor service,RS00076,149.44
+S-SAK,Spiral freezer aux.,R449A,2025,2025-06-01,seal failure,RS00077,7.27
+S-SAK,Spiral freezer aux.,R717_ammonia,2025,2025-03-24,compressor service,RS00078,16.91
+S-SAK,Spiral freezer aux.,R449A,2025,2025-03-05,seal failure,RS00079,3.16
+S-PUD,Pizza line freezer,R449A,2025,2025-05-14,compressor service,RS00080,85150.0
+S-KAN,Process chillers,R134a,2025,2025-07-23,seal failure,RS00081,17.83
+S-HQ,Office AC,R410A,2025,2025-12-10,compressor service,RS00082,0.74
+S-HQ,Office AC,R410A,2025,2025-05-04,compressor service,RS00083,1.62
+S-BJU,Pea freezing tunnel,R744_co2,2025,2025-12-10,seal failure,RS00084,5.14

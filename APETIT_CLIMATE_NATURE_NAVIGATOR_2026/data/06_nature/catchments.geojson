@@ -1,0 +1,1789 @@
+{
+ "type": "FeatureCollection",
+ "crs": {
+  "type": "name",
+  "properties": {
+   "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+  }
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CA01",
+    "region": "FI_SW",
+    "receiving_water_type": "lake",
+    "ecological_status_class": "good",
+    "catchment_area_km2": 615.0
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       22.07644,
+       61.127636
+      ],
+      [
+       22.397002,
+       61.05325
+      ],
+      [
+       22.404278,
+       61.050177
+      ],
+      [
+       22.257696,
+       60.812962
+      ],
+      [
+       22.137947,
+       60.768323
+      ],
+      [
+       22.009333,
+       61.067874
+      ],
+      [
+       22.07644,
+       61.127636
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CA02",
+    "region": "FI_SW",
+    "receiving_water_type": "lake",
+    "ecological_status_class": "poor",
+    "catchment_area_km2": 196.3
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       22.363408,
+       61.154626
+      ],
+      [
+       22.589177,
+       61.18445
+      ],
+      [
+       22.587085,
+       61.082991
+      ],
+      [
+       22.404278,
+       61.050177
+      ],
+      [
+       22.397002,
+       61.05325
+      ],
+      [
+       22.363408,
+       61.154626
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CA03",
+    "region": "FI_SW",
+    "receiving_water_type": "lake",
+    "ecological_status_class": "poor",
+    "catchment_area_km2": 513.2
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       23.612498,
+       60.797738
+      ],
+      [
+       23.431557,
+       60.775353
+      ],
+      [
+       23.092103,
+       60.867636
+      ],
+      [
+       23.194149,
+       61.037134
+      ],
+      [
+       23.359526,
+       61.04811
+      ],
+      [
+       23.612498,
+       60.797738
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CA04",
+    "region": "FI_SW",
+    "receiving_water_type": "river",
+    "ecological_status_class": "moderate",
+    "catchment_area_km2": 381.1
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       21.5,
+       61.088389
+      ],
+      [
+       21.5,
+       61.155867
+      ],
+      [
+       21.81181,
+       61.219854
+      ],
+      [
+       21.792609,
+       61.155514
+      ],
+      [
+       21.5,
+       61.088389
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CA05",
+    "region": "FI_SW",
+    "receiving_water_type": "river",
+    "ecological_status_class": "good",
+    "catchment_area_km2": 303.4
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       21.806849,
+       61.415051
+      ],
+      [
+       21.852751,
+       61.290537
+      ],
+      [
+       21.5,
+       61.273975
+      ],
+      [
+       21.5,
+       61.434807
+      ],
+      [
+       21.806849,
+       61.415051
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CA06",
+    "region": "FI_SW",
+    "receiving_water_type": "lake",
+    "ecological_status_class": "poor",
+    "catchment_area_km2": 186.7
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       22.071419,
+       61.157599
+      ],
+      [
+       22.108976,
+       61.246385
+      ],
+      [
+       22.126088,
+       61.252965
+      ],
+      [
+       22.234781,
+       61.24585
+      ],
+      [
+       22.363408,
+       61.154626
+      ],
+      [
+       22.397002,
+       61.05325
+      ],
+      [
+       22.07644,
+       61.127636
+      ],
+      [
+       22.071419,
+       61.157599
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CA07",
+    "region": "FI_SW",
+    "receiving_water_type": "lake",
+    "ecological_status_class": "poor",
+    "catchment_area_km2": 215.1
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       22.137947,
+       60.768323
+      ],
+      [
+       22.257696,
+       60.812962
+      ],
+      [
+       22.357636,
+       60.824959
+      ],
+      [
+       22.763796,
+       60.838347
+      ],
+      [
+       22.875293,
+       60.809974
+      ],
+      [
+       22.767688,
+       60.6
+      ],
+      [
+       21.901168,
+       60.6
+      ],
+      [
+       22.137947,
+       60.768323
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CA08",
+    "region": "FI_SW",
+    "receiving_water_type": "lake",
+    "ecological_status_class": "poor",
+    "catchment_area_km2": 257.6
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       22.709113,
+       61.47566
+      ],
+      [
+       23.14456,
+       61.313233
+      ],
+      [
+       22.994884,
+       61.174967
+      ],
+      [
+       22.63443,
+       61.276676
+      ],
+      [
+       22.709113,
+       61.47566
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CA09",
+    "region": "FI_SW",
+    "receiving_water_type": "river",
+    "ecological_status_class": "moderate",
+    "catchment_area_km2": 479.0
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       21.90155,
+       61.274643
+      ],
+      [
+       22.108976,
+       61.246385
+      ],
+      [
+       22.071419,
+       61.157599
+      ],
+      [
+       21.792609,
+       61.155514
+      ],
+      [
+       21.81181,
+       61.219854
+      ],
+      [
+       21.90155,
+       61.274643
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CA10",
+    "region": "FI_SW",
+    "receiving_water_type": "river",
+    "ecological_status_class": "good",
+    "catchment_area_km2": 462.1
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       22.994884,
+       61.174967
+      ],
+      [
+       23.14456,
+       61.313233
+      ],
+      [
+       23.310124,
+       61.328569
+      ],
+      [
+       23.492886,
+       61.100383
+      ],
+      [
+       23.359526,
+       61.04811
+      ],
+      [
+       23.194149,
+       61.037134
+      ],
+      [
+       23.055616,
+       61.073872
+      ],
+      [
+       22.994884,
+       61.174967
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CA11",
+    "region": "FI_SW",
+    "receiving_water_type": "river",
+    "ecological_status_class": "moderate",
+    "catchment_area_km2": 517.0
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       21.792609,
+       61.155514
+      ],
+      [
+       22.071419,
+       61.157599
+      ],
+      [
+       22.07644,
+       61.127636
+      ],
+      [
+       22.009333,
+       61.067874
+      ],
+      [
+       21.5,
+       61.043032
+      ],
+      [
+       21.5,
+       61.088389
+      ],
+      [
+       21.792609,
+       61.155514
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CA12",
+    "region": "FI_SW",
+    "receiving_water_type": "river",
+    "ecological_status_class": "poor",
+    "catchment_area_km2": 220.4
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       22.009333,
+       61.067874
+      ],
+      [
+       22.137947,
+       60.768323
+      ],
+      [
+       21.901168,
+       60.6
+      ],
+      [
+       21.5,
+       60.6
+      ],
+      [
+       21.5,
+       61.043032
+      ],
+      [
+       22.009333,
+       61.067874
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CA13",
+    "region": "FI_SW",
+    "receiving_water_type": "river",
+    "ecological_status_class": "moderate",
+    "catchment_area_km2": 310.5
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       23.195013,
+       60.654499
+      ],
+      [
+       23.431557,
+       60.775353
+      ],
+      [
+       23.612498,
+       60.797738
+      ],
+      [
+       23.75,
+       60.771672
+      ],
+      [
+       23.75,
+       60.6
+      ],
+      [
+       23.178651,
+       60.6
+      ],
+      [
+       23.195013,
+       60.654499
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CA14",
+    "region": "FI_SW",
+    "receiving_water_type": "river",
+    "ecological_status_class": "moderate",
+    "catchment_area_km2": 482.7
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       22.63443,
+       61.276676
+      ],
+      [
+       22.994884,
+       61.174967
+      ],
+      [
+       23.055616,
+       61.073872
+      ],
+      [
+       22.789044,
+       61.033452
+      ],
+      [
+       22.747427,
+       61.038226
+      ],
+      [
+       22.587085,
+       61.082991
+      ],
+      [
+       22.589177,
+       61.18445
+      ],
+      [
+       22.61381,
+       61.266828
+      ],
+      [
+       22.63443,
+       61.276676
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CA15",
+    "region": "FI_SW",
+    "receiving_water_type": "lake",
+    "ecological_status_class": "poor",
+    "catchment_area_km2": 274.5
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       21.852751,
+       61.290537
+      ],
+      [
+       21.806849,
+       61.415051
+      ],
+      [
+       22.211269,
+       61.547006
+      ],
+      [
+       22.126088,
+       61.252965
+      ],
+      [
+       22.108976,
+       61.246385
+      ],
+      [
+       21.90155,
+       61.274643
+      ],
+      [
+       21.852751,
+       61.290537
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CA16",
+    "region": "FI_SW",
+    "receiving_water_type": "lake",
+    "ecological_status_class": "poor",
+    "catchment_area_km2": 295.8
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       23.310124,
+       61.328569
+      ],
+      [
+       23.388826,
+       61.375721
+      ],
+      [
+       23.75,
+       61.306065
+      ],
+      [
+       23.75,
+       61.125801
+      ],
+      [
+       23.492886,
+       61.100383
+      ],
+      [
+       23.310124,
+       61.328569
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CA17",
+    "region": "FI_SW",
+    "receiving_water_type": "lake",
+    "ecological_status_class": "poor",
+    "catchment_area_km2": 451.6
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       22.763796,
+       60.838347
+      ],
+      [
+       22.357636,
+       60.824959
+      ],
+      [
+       22.747427,
+       61.038226
+      ],
+      [
+       22.789044,
+       61.033452
+      ],
+      [
+       22.763796,
+       60.838347
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CA18",
+    "region": "FI_SW",
+    "receiving_water_type": "lake",
+    "ecological_status_class": "bad",
+    "catchment_area_km2": 225.5
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       22.589177,
+       61.18445
+      ],
+      [
+       22.363408,
+       61.154626
+      ],
+      [
+       22.234781,
+       61.24585
+      ],
+      [
+       22.61381,
+       61.266828
+      ],
+      [
+       22.589177,
+       61.18445
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CA19",
+    "region": "FI_SW",
+    "receiving_water_type": "river",
+    "ecological_status_class": "good",
+    "catchment_area_km2": 245.1
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       22.211269,
+       61.547006
+      ],
+      [
+       21.806849,
+       61.415051
+      ],
+      [
+       21.5,
+       61.434807
+      ],
+      [
+       21.5,
+       61.6
+      ],
+      [
+       22.27064,
+       61.6
+      ],
+      [
+       22.211269,
+       61.547006
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CA20",
+    "region": "FI_SW",
+    "receiving_water_type": "coastal",
+    "ecological_status_class": "poor",
+    "catchment_area_km2": 478.8
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       21.852751,
+       61.290537
+      ],
+      [
+       21.90155,
+       61.274643
+      ],
+      [
+       21.81181,
+       61.219854
+      ],
+      [
+       21.5,
+       61.155867
+      ],
+      [
+       21.5,
+       61.273975
+      ],
+      [
+       21.852751,
+       61.290537
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CA21",
+    "region": "FI_SW",
+    "receiving_water_type": "river",
+    "ecological_status_class": "good",
+    "catchment_area_km2": 401.0
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       23.388826,
+       61.375721
+      ],
+      [
+       23.310124,
+       61.328569
+      ],
+      [
+       23.14456,
+       61.313233
+      ],
+      [
+       22.709113,
+       61.47566
+      ],
+      [
+       22.650318,
+       61.6
+      ],
+      [
+       23.420945,
+       61.6
+      ],
+      [
+       23.388826,
+       61.375721
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CA22",
+    "region": "FI_SW",
+    "receiving_water_type": "lake",
+    "ecological_status_class": "good",
+    "catchment_area_km2": 355.3
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       23.388826,
+       61.375721
+      ],
+      [
+       23.420945,
+       61.6
+      ],
+      [
+       23.75,
+       61.6
+      ],
+      [
+       23.75,
+       61.306065
+      ],
+      [
+       23.388826,
+       61.375721
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CA23",
+    "region": "FI_SW",
+    "receiving_water_type": "river",
+    "ecological_status_class": "moderate",
+    "catchment_area_km2": 277.9
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       23.612498,
+       60.797738
+      ],
+      [
+       23.359526,
+       61.04811
+      ],
+      [
+       23.492886,
+       61.100383
+      ],
+      [
+       23.75,
+       61.125801
+      ],
+      [
+       23.75,
+       60.771672
+      ],
+      [
+       23.612498,
+       60.797738
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CA24",
+    "region": "FI_SW",
+    "receiving_water_type": "river",
+    "ecological_status_class": "good",
+    "catchment_area_km2": 206.3
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       22.211269,
+       61.547006
+      ],
+      [
+       22.27064,
+       61.6
+      ],
+      [
+       22.650318,
+       61.6
+      ],
+      [
+       22.709113,
+       61.47566
+      ],
+      [
+       22.63443,
+       61.276676
+      ],
+      [
+       22.61381,
+       61.266828
+      ],
+      [
+       22.234781,
+       61.24585
+      ],
+      [
+       22.126088,
+       61.252965
+      ],
+      [
+       22.211269,
+       61.547006
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CA25",
+    "region": "FI_SW",
+    "receiving_water_type": "lake",
+    "ecological_status_class": "poor",
+    "catchment_area_km2": 211.9
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       22.789044,
+       61.033452
+      ],
+      [
+       23.055616,
+       61.073872
+      ],
+      [
+       23.194149,
+       61.037134
+      ],
+      [
+       23.092103,
+       60.867636
+      ],
+      [
+       22.976402,
+       60.817161
+      ],
+      [
+       22.875293,
+       60.809974
+      ],
+      [
+       22.763796,
+       60.838347
+      ],
+      [
+       22.789044,
+       61.033452
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CA26",
+    "region": "FI_SW",
+    "receiving_water_type": "river",
+    "ecological_status_class": "moderate",
+    "catchment_area_km2": 209.4
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       22.875293,
+       60.809974
+      ],
+      [
+       22.976402,
+       60.817161
+      ],
+      [
+       23.195013,
+       60.654499
+      ],
+      [
+       23.178651,
+       60.6
+      ],
+      [
+       22.767688,
+       60.6
+      ],
+      [
+       22.875293,
+       60.809974
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CA27",
+    "region": "FI_SW",
+    "receiving_water_type": "river",
+    "ecological_status_class": "poor",
+    "catchment_area_km2": 348.4
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       23.092103,
+       60.867636
+      ],
+      [
+       23.431557,
+       60.775353
+      ],
+      [
+       23.195013,
+       60.654499
+      ],
+      [
+       22.976402,
+       60.817161
+      ],
+      [
+       23.092103,
+       60.867636
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CA28",
+    "region": "FI_SW",
+    "receiving_water_type": "lake",
+    "ecological_status_class": "moderate",
+    "catchment_area_km2": 341.5
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       22.257696,
+       60.812962
+      ],
+      [
+       22.404278,
+       61.050177
+      ],
+      [
+       22.587085,
+       61.082991
+      ],
+      [
+       22.747427,
+       61.038226
+      ],
+      [
+       22.357636,
+       60.824959
+      ],
+      [
+       22.257696,
+       60.812962
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CS01",
+    "region": "SE_SKANE",
+    "receiving_water_type": "river",
+    "ecological_status_class": "poor",
+    "catchment_area_km2": 206.2
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       13.052398,
+       55.955279
+      ],
+      [
+       12.8159,
+       56.143785
+      ],
+      [
+       13.280881,
+       56.078475
+      ],
+      [
+       13.06317,
+       55.954069
+      ],
+      [
+       13.052398,
+       55.955279
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CS02",
+    "region": "SE_SKANE",
+    "receiving_water_type": "lake",
+    "ecological_status_class": "moderate",
+    "catchment_area_km2": 202.9
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       13.256889,
+       55.811053
+      ],
+      [
+       13.414556,
+       55.859799
+      ],
+      [
+       14.039998,
+       55.740888
+      ],
+      [
+       13.468678,
+       55.4
+      ],
+      [
+       13.315034,
+       55.4
+      ],
+      [
+       13.142436,
+       55.682956
+      ],
+      [
+       13.256889,
+       55.811053
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CS03",
+    "region": "SE_SKANE",
+    "receiving_water_type": "river",
+    "ecological_status_class": "poor",
+    "catchment_area_km2": 205.0
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       13.474112,
+       56.193385
+      ],
+      [
+       13.585799,
+       56.129584
+      ],
+      [
+       13.280881,
+       56.078475
+      ],
+      [
+       12.8159,
+       56.143785
+      ],
+      [
+       12.5,
+       56.251564
+      ],
+      [
+       12.5,
+       56.57373
+      ],
+      [
+       13.474112,
+       56.193385
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CS04",
+    "region": "SE_SKANE",
+    "receiving_water_type": "river",
+    "ecological_status_class": "moderate",
+    "catchment_area_km2": 165.5
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       14.039998,
+       55.740888
+      ],
+      [
+       14.389067,
+       55.844755
+      ],
+      [
+       14.5,
+       55.848464
+      ],
+      [
+       14.5,
+       55.4
+      ],
+      [
+       13.468678,
+       55.4
+      ],
+      [
+       14.039998,
+       55.740888
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CS05",
+    "region": "SE_SKANE",
+    "receiving_water_type": "river",
+    "ecological_status_class": "poor",
+    "catchment_area_km2": 355.6
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       12.8159,
+       56.143785
+      ],
+      [
+       13.052398,
+       55.955279
+      ],
+      [
+       12.5,
+       55.873243
+      ],
+      [
+       12.5,
+       56.251564
+      ],
+      [
+       12.8159,
+       56.143785
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CS06",
+    "region": "SE_SKANE",
+    "receiving_water_type": "river",
+    "ecological_status_class": "moderate",
+    "catchment_area_km2": 211.2
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       13.585799,
+       56.129584
+      ],
+      [
+       13.474112,
+       56.193385
+      ],
+      [
+       13.65816,
+       56.72483
+      ],
+      [
+       13.805511,
+       56.620102
+      ],
+      [
+       14.100465,
+       56.402731
+      ],
+      [
+       13.597368,
+       56.12729
+      ],
+      [
+       13.585799,
+       56.129584
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CS07",
+    "region": "SE_SKANE",
+    "receiving_water_type": "coastal",
+    "ecological_status_class": "moderate",
+    "catchment_area_km2": 401.4
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       13.605578,
+       56.119409
+      ],
+      [
+       14.389067,
+       55.844755
+      ],
+      [
+       14.039998,
+       55.740888
+      ],
+      [
+       13.414556,
+       55.859799
+      ],
+      [
+       13.605578,
+       56.119409
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CS08",
+    "region": "SE_SKANE",
+    "receiving_water_type": "coastal",
+    "ecological_status_class": "poor",
+    "catchment_area_km2": 497.2
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       13.280881,
+       56.078475
+      ],
+      [
+       13.585799,
+       56.129584
+      ],
+      [
+       13.597368,
+       56.12729
+      ],
+      [
+       13.605578,
+       56.119409
+      ],
+      [
+       13.414556,
+       55.859799
+      ],
+      [
+       13.256889,
+       55.811053
+      ],
+      [
+       13.06317,
+       55.954069
+      ],
+      [
+       13.280881,
+       56.078475
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CS09",
+    "region": "SE_SKANE",
+    "receiving_water_type": "lake",
+    "ecological_status_class": "moderate",
+    "catchment_area_km2": 162.2
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       14.100465,
+       56.402731
+      ],
+      [
+       13.805511,
+       56.620102
+      ],
+      [
+       14.5,
+       56.606484
+      ],
+      [
+       14.5,
+       56.336268
+      ],
+      [
+       14.100465,
+       56.402731
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CS10",
+    "region": "SE_SKANE",
+    "receiving_water_type": "river",
+    "ecological_status_class": "moderate",
+    "catchment_area_km2": 292.3
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       14.389067,
+       55.844755
+      ],
+      [
+       13.605578,
+       56.119409
+      ],
+      [
+       13.597368,
+       56.12729
+      ],
+      [
+       14.100465,
+       56.402731
+      ],
+      [
+       14.5,
+       56.336268
+      ],
+      [
+       14.5,
+       55.848464
+      ],
+      [
+       14.389067,
+       55.844755
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CS11",
+    "region": "SE_SKANE",
+    "receiving_water_type": "river",
+    "ecological_status_class": "moderate",
+    "catchment_area_km2": 303.7
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       13.06317,
+       55.954069
+      ],
+      [
+       13.256889,
+       55.811053
+      ],
+      [
+       13.142436,
+       55.682956
+      ],
+      [
+       12.5,
+       55.832097
+      ],
+      [
+       12.5,
+       55.873243
+      ],
+      [
+       13.052398,
+       55.955279
+      ],
+      [
+       13.06317,
+       55.954069
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CS12",
+    "region": "SE_SKANE",
+    "receiving_water_type": "lake",
+    "ecological_status_class": "moderate",
+    "catchment_area_km2": 356.0
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       13.142436,
+       55.682956
+      ],
+      [
+       13.315034,
+       55.4
+      ],
+      [
+       12.5,
+       55.4
+      ],
+      [
+       12.5,
+       55.832097
+      ],
+      [
+       13.142436,
+       55.682956
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CS13",
+    "region": "SE_SKANE",
+    "receiving_water_type": "coastal",
+    "ecological_status_class": "poor",
+    "catchment_area_km2": 170.5
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       13.65816,
+       56.72483
+      ],
+      [
+       13.474112,
+       56.193385
+      ],
+      [
+       12.5,
+       56.57373
+      ],
+      [
+       12.5,
+       56.9
+      ],
+      [
+       13.456116,
+       56.9
+      ],
+      [
+       13.65816,
+       56.72483
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "catchment_id": "CS14",
+    "region": "SE_SKANE",
+    "receiving_water_type": "river",
+    "ecological_status_class": "moderate",
+    "catchment_area_km2": 123.7
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       13.805511,
+       56.620102
+      ],
+      [
+       13.65816,
+       56.72483
+      ],
+      [
+       13.456116,
+       56.9
+      ],
+      [
+       14.5,
+       56.9
+      ],
+      [
+       14.5,
+       56.606484
+      ],
+      [
+       13.805511,
+       56.620102
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

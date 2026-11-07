@@ -1,0 +1,68 @@
+{
+ "id": "221db7fe-3501-77d3-6f47-a061071d937f",
+ "specVersion": "2.2.0",
+ "version": 1,
+ "created": "2026-03-09T09:00:00Z",
+ "status": "Active",
+ "companyName": "Supplier 011 (synthetic)",
+ "companyIds": [
+  "urn:pathfinder:company:customcode:buyer-assigned:SUP011"
+ ],
+ "productDescription": "Rapeseed import Lithuania",
+ "productIds": [
+  "urn:pathfinder:product:customcode:buyer-assigned:M104"
+ ],
+ "productCategoryCpc": "01441",
+ "productNameCompany": "Rapeseed import Lithuania",
+ "comment": "Synthetic PCF for the Since AI 2026 hackathon. Not a real supplier declaration.",
+ "pcf": {
+  "declaredUnit": "kilogram",
+  "unitaryProductAmount": "1",
+  "pCfExcludingBiogenic": "1409.1",
+  "pCfIncludingBiogenic": "1409.1",
+  "fossilGhgEmissions": "183.2",
+  "fossilCarbonContent": "0",
+  "biogenicCarbonContent": "0.18",
+  "dLucGhgEmissions": "0.0",
+  "landManagementGhgEmissions": "1225.9",
+  "otherBiogenicGhgEmissions": "0",
+  "iLucGhgEmissions": "0",
+  "biogenicCarbonWithdrawal": "0",
+  "aircraftGhgEmissions": "0",
+  "characterizationFactors": "AR6",
+  "ipccCharacterizationFactorsSources": [
+   "AR6"
+  ],
+  "crossSectoralStandardsUsed": [
+   "GHG Protocol Product standard"
+  ],
+  "productOrSectorSpecificRules": [],
+  "boundaryProcessesDescription": "Cradle-to-gate: cultivation, inputs, drying, storage, transport to supplier warehouse.",
+  "referencePeriodStart": "2025-01-01T00:00:00Z",
+  "referencePeriodEnd": "2026-01-01T00:00:00Z",
+  "geographyCountry": "LT",
+  "secondaryEmissionFactorSources": [
+   {
+    "name": "synthetic secondary database",
+    "version": "2025"
+   }
+  ],
+  "exemptedEmissionsPercent": 2.6,
+  "exemptedEmissionsDescription": "Capital goods and overheads excluded.",
+  "packagingEmissionsIncluded": false,
+  "primaryDataShare": 33.0,
+  "dqi": {
+   "coveragePercent": 72.0,
+   "technologicalDQR": 2.1,
+   "temporalDQR": 1.9,
+   "geographicalDQR": 1.2,
+   "completenessDQR": 1.3,
+   "reliabilityDQR": 2.9
+  },
+  "assurance": {
+   "assurance": false,
+   "coverage": "product line",
+   "level": "limited"
+  }
+ }
+}

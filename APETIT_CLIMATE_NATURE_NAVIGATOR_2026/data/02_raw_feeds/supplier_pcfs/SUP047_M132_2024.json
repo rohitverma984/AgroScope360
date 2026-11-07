@@ -1,0 +1,68 @@
+{
+ "id": "7267acc4-8a02-cef3-1753-6db176a3e7dd",
+ "specVersion": "2.2.0",
+ "version": 1,
+ "created": "2025-03-17T09:00:00Z",
+ "status": "Active",
+ "companyName": "Supplier 047 (synthetic)",
+ "companyIds": [
+  "urn:pathfinder:company:customcode:buyer-assigned:SUP047"
+ ],
+ "productDescription": "Milk powder 26 %",
+ "productIds": [
+  "urn:pathfinder:product:customcode:buyer-assigned:M132"
+ ],
+ "productCategoryCpc": "21000",
+ "productNameCompany": "Milk powder 26 %",
+ "comment": "Synthetic PCF for the Since AI 2026 hackathon. Not a real supplier declaration.",
+ "pcf": {
+  "declaredUnit": "kilogram",
+  "unitaryProductAmount": "1",
+  "pCfExcludingBiogenic": "6.9150",
+  "pCfIncludingBiogenic": "6.9150",
+  "fossilGhgEmissions": "1.0372",
+  "fossilCarbonContent": "0",
+  "biogenicCarbonContent": "0",
+  "dLucGhgEmissions": "0.0000",
+  "landManagementGhgEmissions": "5.8778",
+  "otherBiogenicGhgEmissions": "0",
+  "iLucGhgEmissions": "0",
+  "biogenicCarbonWithdrawal": "0",
+  "aircraftGhgEmissions": "0",
+  "characterizationFactors": "AR6",
+  "ipccCharacterizationFactorsSources": [
+   "AR6"
+  ],
+  "crossSectoralStandardsUsed": [
+   "GHG Protocol Product standard"
+  ],
+  "productOrSectorSpecificRules": [],
+  "boundaryProcessesDescription": "Cradle-to-gate: cultivation, inputs, drying, storage, transport to supplier warehouse.",
+  "referencePeriodStart": "2024-01-01T00:00:00Z",
+  "referencePeriodEnd": "2025-01-01T00:00:00Z",
+  "geographyCountry": "FI",
+  "secondaryEmissionFactorSources": [
+   {
+    "name": "synthetic secondary database",
+    "version": "2025"
+   }
+  ],
+  "exemptedEmissionsPercent": 1.5,
+  "exemptedEmissionsDescription": "Capital goods and overheads excluded.",
+  "packagingEmissionsIncluded": false,
+  "primaryDataShare": 50.0,
+  "dqi": {
+   "coveragePercent": 91.0,
+   "technologicalDQR": 1.7,
+   "temporalDQR": 1.4,
+   "geographicalDQR": 2.0,
+   "completenessDQR": 2.5,
+   "reliabilityDQR": 2.3
+  },
+  "assurance": {
+   "assurance": false,
+   "coverage": "product line",
+   "level": "limited"
+  }
+ }
+}
